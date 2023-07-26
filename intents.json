@@ -11,188 +11,1563 @@
              "responses":["have a nice day","goodbye"]
             },
             {
-             "tag":"age",
-             "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
-             "responses":["I get reborn after every compilation","hey!","my owners are averagely 20 years!"]
-            },
-            {
              "tag":"name",
              "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
              "responses":["you can call me Medbot!","i am Medbot!","i am Medbot your medical assistant"]
             },
             {
-             "tag":"common cold symptoms",
-             "patterns": ["Runny or stuffy nose",
-             "Sore throat",
-             "Cough",
-             "Congestion",
-             "Slight body aches or a mild headache",
-             "Sneezing",
-             "Low-grade fever",
-             "Generally feeling unwell (malaise)"],
-             "responses":["It seems that you are suffering from common cold"]
+                "tag": "allergy prevention",
+                "patterns": [
+                  "What medicines can I buy to help me with my allergies?",
+                  "tell me some prevention methods from allergies",
+                  "What should I eat or drink if I am suffering from allergies?",
+                  "How can I keep from getting allergies?"
+                ],
+                "responses": [
+                  "Medicines you can consume: Antihistamines (e.g., Loratadine, Cetirizine), Nasal sprays (e.g., Fluticasone, Beclomethasone), Eye drops (e.g., Olopatadine) \n Prevention methods you can follow: Keep windows closed to avoid pollen, Use air purifiers or filters, Wash your hands regularly, Avoid triggers such as dust mites, pet dander, and mold Foods that may help alleviate allergy symptoms: Quercetin-rich foods (e.g., apples, berries), Omega-3 fatty acids (e.g., fatty fish, flaxseeds), Ginger, Turmeric"
+                ]
             },
             {
-             "tag":"fever symptoms",
-             "patterns":["Sweating",
-             "Chills and shivering",
-             "Headache",
-             "Muscle aches",
-             "Loss of appetite",
-             "Irritability",
-             "Dehydration",
-             "General weakness"],
-             "responses":["It seems that you are suffering from fever"]
+                "tag": "hypertension prevention",
+                "patterns": [
+                  "What medicines can I buy to help me with my high blood pressure?",
+                  "tell me some prevention methods from hypertension",
+                  "What should I eat or drink if I am suffering from high blood pressure?",
+                  "How can I keep from getting hypertension?"
+                ],
+                "responses": [
+                  "Medicines you can consume: Diuretics (e.g., Hydrochlorothiazide), ACE inhibitors (e.g., Lisinopril), Calcium channel blockers (e.g., Amlodipine)",
+                  "Prevention methods you can follow: Reduce sodium intake, Eat a balanced diet (rich in fruits, vegetables, and whole grains), Exercise regularly, Limit alcohol consumption, Manage stress",
+                  "Foods that may help manage high blood pressure: Potassium-rich foods (e.g., bananas, spinach), Dark chocolate (in moderation), Garlic, Olive oil"
+                ]
             },
             {
-             "tag":"Diabetes symptoms",
-             "patterns":["increased hunger",
-             "increased thirst",
-             "weight loss",
-             "frequent urination",
-             "blurry vision",
-             "extreme fatigue"],
-             "responses":["It seems that you are suffering from Diabetes"]
+                "tag": "insomnia prevention",
+                "patterns": [
+                  "What medicines can I buy to help me with my insomnia?",
+                  "tell me some prevention methods from insomnia",
+                  "What should I eat or drink if I am suffering from insomnia?",
+                  "How can I keep from getting insomnia?"
+                ],
+                "responses": [
+                  "Medicines you can consume: Sedative-hypnotics (e.g., Zolpidem, Eszopiclone), Melatonin supplements",
+                  "Prevention methods you can follow: Maintain a regular sleep schedule, Create a bedtime routine, Create a sleep-friendly environment (dark, quiet, and comfortable), Limit caffeine and electronic devices before bed",
+                  "Foods that may aid sleep: Chamomile tea, Warm milk, Almonds, Bananas"
+                ]
             },
             {
-             "tag":"Depression symptoms",
-             "patterns":["Hopeless outlook",
-             "Lost interest",
-             "Increased fatigue",
-             "sleep problem",
-             "Anxiety",
-             "change in weight",
-             "Looking at death"],
-             "responses":["It seem that you are suffering from depression"]
+                "tag": "digestive disorder prevention",
+                "patterns": [
+                  "What medicines can I buy to help me with my digestive disorder?",
+                  "tell me some prevention methods from digestive disorders",
+                  "What should I eat or drink if I am suffering from a digestive disorder?",
+                  "How can I keep from getting digestive disorders?"
+                ],
+                "responses": [
+                  "Medicines you can consume: Antacids (e.g., Tums), Proton pump inhibitors (e.g., Omeprazole), Anti-diarrheal medications (e.g., Loperamide)",
+                  "Prevention methods you can follow: Maintain a healthy diet and weight, Eat smaller meals more frequently, Drink plenty of water, Manage stress, Exercise regularly",
+                  "Foods that may help with digestive disorders: Ginger, Peppermint, Yogurt, Plain rice, Boiled potatoes"
+                ]
             },
             {
-             "tag":"Asthma symptoms",
-             "patterns":["coughing",
-             "tightness in the chest",
-             "shortness of breath",
-             "difficulty talking",
-             "panic",
-             "fatigue"],
-             "responses":["It seem that you are suffering from Asthma"]
+                "tag": "skin condition prevention",
+                "patterns": [
+                  "What medicines can I buy to help me with my skin condition?",
+                  "tell me some prevention methods from skin conditions",
+                  "What should I eat or drink if I am suffering from a skin condition?",
+                  "How can I keep from getting skin conditions?"
+                ],
+                "responses": [
+                  "Medicines you can consume: Topical corticosteroids, Antihistamines (for itching), Moisturizers",
+                  "Prevention methods you can follow: Keep the skin clean and moisturized, Avoid triggers or irritants, Wear sunscreen, Manage stress",
+                  "Foods that may promote skin health: Fatty fish (e.g., salmon), Nuts and seeds, Colorful fruits and vegetables, Green tea"
+                ]
             },
             {
-             "tag":"common cold prevention",
-             "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
-             "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
+                "tag": "weight loss tips",
+                "patterns": [
+                  "What are some effective weight loss strategies?",
+                  "Tell me some tips for losing weight.",
+                  "What should I eat or drink for weight loss?",
+                  "How can I achieve my weight loss goals?"
+                ],
+                "responses": [
+                  "Effective weight loss strategies: Set realistic goals, Follow a balanced and calorie-controlled diet, Engage in regular physical activity, Stay hydrated, Get enough sleep",
+                  "Tips for losing weight: Eat smaller portions, Choose nutrient-dense foods, Avoid sugary beverages, Incorporate exercise into your daily routine, Keep a food diary to track your progress",
+                  "Foods that may aid weight loss: Lean proteins (e.g., chicken breast, tofu), Whole grains, Fruits and vegetables, Green tea, Water"
+                ]
             },
             {
-             "tag":"fever prevention",
-             "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
-             "responses":["medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"]
-            },
-            {
-             "tag":"diabetes prevention",
-             "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
-             "responses":["medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"]
-            },
-            {
-             "tag":"depression prevention",
-             "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
-             "responses":["medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"]
-            },
-            {
-             "tag":"asthma prevention",
-             "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
-             "responses":["medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"]
-            },
-            {
-             "tag":"Consultation",
-             "patterns": ["who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
-             "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
-            },
-            {
-                  "tag": "Diabetes symptoms",
-                  "patterns": [
-                    "increased hunger",
-                    "increased thirst",
-                    "weight loss",
-                    "frequent urination",
-                    "blurry vision",
-                    "extreme fatigue"
-                  ],
-                  "responses": [
-                    "It seems that you are suffering from Diabetes"
-                  ]
+                "tag": "anxiety management techniques",
+                "patterns": [
+                  "What are some techniques to manage anxiety?",
+                  "Tell me how to cope with anxiety.",
+                  "What should I do to reduce anxiety?",
+                  "How can I manage my anxiety effectively?"
+                ],
+                "responses": [
+                  "Techniques to manage anxiety: Practice deep breathing exercises, Engage in regular physical activity, Try relaxation techniques (e.g., meditation, yoga), Prioritize self-care, Seek support from loved ones or a mental health professional",
+                  "Tips to cope with anxiety: Challenge negative thoughts, Practice mindfulness, Establish a routine, Avoid excessive caffeine and alcohol, Get enough sleep",
+                  "Activities that may help reduce anxiety: Journaling, Listening to calming music, Spending time in nature, Engaging in hobbies or creative outlets"
+                ]
+              },
+              {
+                "tag": "osteoporosis prevention",
+                "patterns": [
+                  "How can I prevent osteoporosis?",
+                  "Tell me some tips for maintaining bone health.",
+                  "What should I eat or drink to prevent osteoporosis?",
+                  "What lifestyle changes can help prevent osteoporosis?"
+                ],
+                "responses": [
+                  "Tips for preventing osteoporosis: Consume a calcium-rich diet (e.g., dairy products, leafy greens), Get enough vitamin D (sun exposure or supplements), Engage in weight-bearing exercises, Avoid smoking and excessive alcohol consumption, Consider bone density screenings",
+                  "Foods and nutrients that support bone health: Calcium, Vitamin D, Magnesium, Phosphorus, Omega-3 fatty acids",
+                  "Lifestyle changes for bone health: Maintain a healthy body weight, Quit smoking, Limit caffeine and soda consumption, Avoid excessive alcohol intake, Practice fall prevention strategies"
+                ]
+              },
+              {
+                "tag": "eye health tips",
+                "patterns": [
+                  "How can I maintain good eye health?",
+                  "Tell me some tips for taking care of my eyes.",
+                  "What should I do to keep my eyes healthy?",
+                  "What lifestyle habits promote good eye health?"
+                ],
+                "responses": [
+                  "Tips for maintaining good eye health: Schedule regular eye exams, Protect your eyes from UV rays (wear sunglasses), Take breaks from digital screens (practice the 20-20-20 rule), Maintain a healthy diet rich in antioxidants and omega-3 fatty acids, Avoid smoking",
+                  "Habits that promote good eye health: Properly clean and care for contact lenses, Use proper lighting when reading or working, Maintain a comfortable distance from screens, Avoid rubbing your eyes excessively, Get enough sleep",
+                  "Foods that support eye health: Leafy greens (e.g., spinach, kale), Fish high in omega-3s (e.g., salmon, tuna), Citrus fruits, Nuts and seeds, Carrots"
+                ]
+              },
+              {
+                "tag": "stress management techniques",
+                "patterns": [
+                  "What are some effective techniques for managing stress?",
+                  "Tell me how to cope with stress.",
+                  "What should I do to reduce stress levels?",
+                  "How can I manage stress in a healthy way?"
+                ],
+                "responses": [
+                  "Effective stress management techniques: Practice deep breathing exercises, Engage in regular physical activity, Prioritize self-care activities, Practice mindfulness and meditation, Seek support from loved ones or a mental health professional",
+                  "Tips to cope with stress: Establish a routine, Set realistic goals, Take breaks and engage in enjoyable activities, Avoid excessive caffeine and alcohol, Get enough sleep",
+                  "Activities that can help reduce stress: Engage in hobbies or creative outlets, Spend time in nature, Practice relaxation techniques (e.g., yoga, tai chi), Listen to calming music, Journaling"
+                ]
+              },
+              {
+                "tag": "heart health tips",
+                "patterns": [
+                  "How can I maintain a healthy heart?",
+                  "Tell me some tips for heart health.",
+                  "What should I do to keep my heart healthy?",
+                  "What lifestyle changes promote a healthy heart?"
+                ],
+                "responses": [
+                  "Tips for maintaining a healthy heart: Follow a balanced and nutritious diet (rich in fruits, vegetables, whole grains, and lean proteins), Engage in regular physical activity, Manage stress levels, Avoid smoking and excessive alcohol consumption, Maintain a healthy weight",
+                  "Habits that promote heart health: Get regular check-ups and screenings, Monitor and manage blood pressure and cholesterol levels, Limit salt and saturated fat intake, Practice portion control, Stay hydrated",
+                  "Foods that support heart health: Berries, Fatty fish (e.g., salmon), Nuts and seeds, Dark chocolate (in moderation), Olive oil"
+                ]
+              },
+              {
+                "tag": "brain health tips",
+                "patterns": [
+                  "How can I maintain a healthy brain?",
+                  "Tell me some tips for brain health.",
+                  "What should I do to keep my brain healthy?",
+                  "What lifestyle habits promote good brain health?"
+                ],
+                "responses": [
+                  "Tips for maintaining a healthy brain: Engage in regular mental stimulation (e.g., puzzles, reading), Get enough quality sleep, Manage stress levels, Stay socially active and maintain strong relationships, Exercise regularly",
+                  "Habits that promote brain health: Eat a balanced diet rich in fruits, vegetables, whole grains, and healthy fats, Stay hydrated, Limit alcohol consumption, Avoid smoking, Protect your head from injuries",
+                  "Foods that support brain health: Blueberries, Fatty fish (e.g., salmon), Turmeric, Broccoli, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "joint health tips",
+                "patterns": [
+                  "How can I maintain healthy joints?",
+                  "Tell me some tips for joint health.",
+                  "What should I do to keep my joints healthy?",
+                  "What lifestyle changes promote good joint health?"
+                ],
+                "responses": [
+                  "Tips for maintaining healthy joints: Engage in regular exercise (including joint-friendly activities like swimming and cycling), Maintain a healthy weight, Avoid prolonged sitting or inactivity, Practice proper posture and body mechanics, Protect your joints from injuries",
+                  "Habits that promote joint health: Stretch regularly, Warm up before physical activity, Use proper footwear and supportive accessories, Take breaks and vary your activities to avoid repetitive stress, Listen to your body and rest when needed",
+                  "Foods that support joint health: Fatty fish (e.g., salmon), Turmeric, Berries, Leafy greens, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "respiratory health tips",
+                "patterns": [
+                  "How can I maintain good respiratory health?",
+                  "Tell me some tips for respiratory health.",
+                  "What should I do to keep my respiratory system healthy?",
+                  "What lifestyle changes promote good lung health?"
+                ],
+                "responses": [
+                  "Tips for maintaining good respiratory health: Avoid smoking and exposure to secondhand smoke, Practice good hygiene (e.g., handwashing, covering your mouth when coughing or sneezing), Maintain a clean indoor environment (free from pollutants and allergens), Get regular exercise to keep lungs strong, Get vaccinated against respiratory illnesses (e.g., flu, pneumonia)",
+                  "Habits that promote respiratory health: Practice deep breathing exercises, Maintain good indoor air quality, Stay hydrated, Avoid excessive air pollution or chemical exposure, Take breaks and move around during prolonged sitting",
+                  "Foods that support respiratory health: Ginger, Garlic, Turmeric, Green tea, Citrus fruits"
+                ]
+              },
+              {
+                "tag": "arthritis management",
+                "patterns": [
+                  "How can I manage arthritis pain?",
+                  "Tell me some tips for arthritis management.",
+                  "What should I do to alleviate arthritis symptoms?",
+                  "What lifestyle changes can help with arthritis?"
+                ],
+                "responses": [
+                  "Tips for managing arthritis: Stay physically active with exercises that are gentle on the joints, Apply hot or cold packs to reduce pain and inflammation, Maintain a healthy weight to reduce stress on the joints, Use assistive devices and adaptive tools to ease daily activities, Consider complementary therapies such as acupuncture or massage",
+                  "Habits that can help with arthritis: Eat a balanced diet with anti-inflammatory foods, Get enough rest and practice good sleep hygiene, Manage stress levels, Protect your joints from injuries and overuse, Take prescribed medications as directed",
+                  "Foods that may help with arthritis: Fatty fish (e.g., salmon), Turmeric, Ginger, Leafy greens, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "dental health tips",
+                "patterns": [
+                  "How can I maintain good dental health?",
+                  "Tell me some tips for dental care.",
+                  "What should I do to keep my teeth and gums healthy?",
+                  "What lifestyle habits promote good oral hygiene?"
+                ],
+                "responses": [
+                  "Tips for maintaining good dental health: Brush your teeth at least twice a day with fluoride toothpaste, Floss daily to remove plaque between teeth, Limit sugary foods and drinks, Visit the dentist regularly for check-ups and cleanings, Avoid smoking and excessive alcohol consumption",
+                  "Habits that promote good oral hygiene: Use a soft-bristled toothbrush and replace it regularly, Use mouthwash to freshen breath and reduce bacteria, Drink plenty of water to rinse your mouth, Chew sugar-free gum to stimulate saliva production, Practice tongue cleaning",
+                  "Foods that support dental health: Dairy products (e.g., milk, cheese), Crunchy fruits and vegetables (e.g., apples, carrots), Nuts, Green tea, Sugar-free gum"
+                ]
+              },
+              {
+                "tag": "immune system boosting",
+                "patterns": [
+                  "How can I boost my immune system?",
+                  "Tell me some tips for strengthening the immune system.",
+                  "What should I do to enhance my immune system?",
+                  "What lifestyle changes can help boost immunity?"
+                ],
+                "responses": [
+                  "Tips for boosting the immune system: Eat a balanced diet rich in fruits, vegetables, whole grains, and lean proteins, Get regular exercise to improve overall health, Get enough quality sleep, Manage stress levels, Stay hydrated",
+                  "Habits that promote a healthy immune system: Practice good hygiene (e.g., washing hands regularly), Avoid smoking and exposure to secondhand smoke, Limit alcohol consumption, Get recommended vaccinations, Avoid excessive use of antibiotics",
+                  "Foods that support immune health: Citrus fruits, Berries, Garlic, Ginger, Yogurt"
+                ]
+              },
+              {
+                "tag": "kidney health tips",
+                "patterns": [
+                  "How can I keep my kidneys healthy?",
+                  "Tell me some tips for kidney health.",
+                  "What should I do to maintain healthy kidneys?",
+                  "What lifestyle changes promote good kidney function?"
+                ],
+                "responses": [
+                  "Tips for maintaining kidney health: Stay hydrated by drinking enough water, Eat a balanced diet low in sodium, Manage blood pressure and blood sugar levels, Avoid excessive use of pain medications, Avoid smoking and limit alcohol consumption",
+                  "Habits that promote good kidney function: Exercise regularly, Get regular check-ups to monitor kidney function, Maintain a healthy weight, Manage stress levels, Avoid exposure to toxins and pollutants",
+                  "Foods that support kidney health: Berries, Citrus fruits, Leafy greens, Garlic, Turmeric"
+                ]
+              },
+              {
+                "tag": "men's health tips",
+                "patterns": [
+                  "How can men maintain good health?",
+                  "Tell me some tips for men's health.",
+                  "What should men do to stay healthy?",
+                  "What lifestyle habits promote good overall health in men?"
+                ],
+                "responses": [
+                  "Tips for men's health: Get regular check-ups and screenings, Maintain a healthy weight through diet and exercise, Manage stress levels, Limit alcohol consumption, Don't smoke or use tobacco products",
+                  "Habits that promote good overall health in men: Eat a balanced diet with a variety of nutrients, Engage in regular physical activity, Practice safe sex and use protection, Get enough quality sleep, Take care of mental health and seek support when needed",
+                  "Foods that support men's health: Lean proteins (e.g., chicken, fish), Whole grains, Colorful fruits and vegetables, Nuts and seeds, Greek yogurt"
+                ]
+              },
+              {
+                "tag": "cancer prevention",
+                "patterns": [
+                  "What are some ways to prevent cancer?",
+                  "Tell me about cancer prevention strategies.",
+                  "How can I lower my risk of cancer?",
+                  "What lifestyle changes can help prevent cancer?"
+                ],
+                "responses": [
+                  "Cancer prevention strategies: Avoid tobacco in any form, Maintain a healthy weight, Eat a balanced diet with plenty of fruits and vegetables, Limit alcohol consumption, Protect your skin from the sun",
+                  "Habits that can lower cancer risk: Get regular check-ups and screenings, Stay physically active, Limit processed and red meat consumption, Avoid exposure to harmful chemicals and pollutants, Vaccinate against cancer-causing infections (e.g., HPV)",
+                  "Foods that may lower cancer risk: Cruciferous vegetables (e.g., broccoli, cauliflower), Berries, Leafy greens, Turmeric, Green tea"
+                ]
+              },
+              {
+                "tag": "digestive health",
+                "patterns": [
+                  "How can I improve my digestive health?",
+                  "Tell me some tips for a healthy digestive system.",
+                  "What should I do to maintain good digestion?",
+                  "What lifestyle changes promote digestive health?"
+                ],
+                "responses": [
+                  "Tips for digestive health: Eat a high-fiber diet with plenty of fruits, vegetables, and whole grains, Stay hydrated by drinking enough water, Exercise regularly to promote bowel movements, Manage stress levels, Avoid excessive intake of fatty and processed foods",
+                  "Habits that promote a healthy digestive system: Chew food thoroughly and eat at a slower pace, Practice portion control, Include probiotics and fermented foods in your diet, Avoid smoking and limit alcohol consumption, Get regular exercise to support digestion",
+                  "Foods that support digestive health: Yogurt, Ginger, Papaya, Whole grains, Peppermint"
+                ]
+              },
+              {
+                "tag": "cholesterol management",
+                "patterns": [
+                  "How can I manage my cholesterol levels?",
+                  "Tell me some tips for cholesterol control.",
+                  "What should I do to maintain healthy cholesterol levels?",
+                  "What lifestyle changes promote good cholesterol health?"
+                ],
+                "responses": [
+                  "Tips for managing cholesterol levels: Eat a heart-healthy diet low in saturated and trans fats, Maintain a healthy weight, Exercise regularly to raise HDL (good) cholesterol, Limit cholesterol-rich foods (e.g., eggs, shellfish), Quit smoking",
+                  "Habits that promote good cholesterol health: Include soluble fiber in your diet (e.g., oats, legumes), Choose healthier cooking methods (grilling, baking), Limit alcohol consumption, Get regular check-ups to monitor cholesterol levels, Manage stress levels",
+                  "Foods that may help lower cholesterol: Nuts, Avocado, Olive oil, Fatty fish (e.g., salmon), Garlic"
+                ]
+              },
+              {
+                "tag": "mental health support",
+                "patterns": [
+                  "How can I support my mental health?",
+                  "Tell me some tips for maintaining good mental well-being.",
+                  "What should I do to take care of my mental health?",
+                  "What lifestyle changes promote good mental well-being?"
+                ],
+                "responses": [
+                  "Tips for supporting mental health: Prioritize self-care activities, Seek support from loved ones or a mental health professional, Practice stress management techniques (e.g., meditation, deep breathing), Engage in activities you enjoy, Get enough quality sleep",
+                  "Habits that promote good mental well-being: Stay socially connected, Practice gratitude and positive thinking, Set realistic goals and manage expectations, Limit exposure to negative news and social media, Engage in regular physical activity",
+                  "Activities that may support mental health: Journaling, Listening to music, Spending time in nature, Engaging in creative pursuits, Seeking therapy or counseling"
+                ]
+              },
+              {
+                "tag": "sleep disorders",
+                "patterns": [
+                  "How can I improve my sleep quality?",
+                  "Tell me some tips for managing sleep disorders.",
+                  "What should I do to overcome sleep problems?",
+                  "What lifestyle changes promote better sleep?"
+                ],
+                "responses": [
+                  "Tips for improving sleep quality: Establish a regular sleep schedule, Create a relaxing bedtime routine, Create a comfortable sleep environment (dark, quiet, and cool), Limit daytime napping, Avoid caffeine and electronic devices before bed",
+                  "Habits that can help manage sleep disorders: Practice relaxation techniques (e.g., meditation, deep breathing), Limit exposure to stimulating activities close to bedtime, Exercise regularly but not too close to bedtime, Manage stress levels, Avoid large meals and excessive fluids before bed",
+                  "Foods that may aid sleep: Tart cherry juice, Herbal teas (e.g., chamomile, valerian), Warm milk, Bananas, Whole grains"
+                ]
+              },
+              {
+                "tag": "thyroid health",
+                "patterns": [
+                  "How can I support my thyroid health?",
+                  "Tell me some tips for maintaining a healthy thyroid.",
+                  "What should I do to keep my thyroid functioning well?",
+                  "What lifestyle changes promote good thyroid health?"
+                ],
+                "responses": [
+                  "Tips for supporting thyroid health: Eat a well-balanced diet with sufficient iodine and selenium, Manage stress levels, Get regular exercise to support thyroid function, Get enough quality sleep, Limit exposure to environmental toxins",
+                  "Habits that promote good thyroid function: Avoid excessive consumption of goitrogenic foods (e.g., broccoli, cabbage), Limit soy-based products, Ensure adequate intake of vitamins and minerals (e.g., vitamin D, zinc), Get regular check-ups to monitor thyroid function, Avoid smoking",
+                  "Foods that support thyroid health: Seaweed, Brazil nuts, Fish (e.g., salmon, tuna), Spinach, Greek yogurt"
+                ]
+              },
+              {
+                "tag": "aging gracefully",
+                "patterns": [
+                  "How can I age gracefully?",
+                  "Tell me some tips for healthy aging.",
+                  "What should I do to age well?",
+                  "What lifestyle changes promote graceful aging?"
+                ],
+                "responses": [
+                  "Tips for aging gracefully: Eat a nutrient-rich diet with plenty of antioxidants, Engage in regular physical activity to maintain strength and flexibility, Protect your skin from the sun, Stay mentally and socially active, Get enough quality sleep",
+                  "Habits that promote healthy aging: Practice stress management techniques, Maintain a positive outlook and a sense of purpose, Stay socially connected with loved ones, Get regular check-ups and screenings, Limit alcohol consumption and avoid smoking",
+                  "Foods that may support healthy aging: Berries, Leafy greens, Nuts and seeds, Fatty fish (e.g., salmon), Whole grains"
+                ]
+              },
+              {
+                "tag": "prenatal care",
+                "patterns": [
+                  "What should I do during pregnancy to ensure a healthy baby?",
+                  "Tell me some tips for prenatal care.",
+                  "How can I take care of myself and my baby during pregnancy?",
+                  "What lifestyle changes should I make for a healthy pregnancy?"
+                ],
+                "responses": [
+                  "Tips for prenatal care: Schedule regular prenatal check-ups, Take prenatal vitamins as recommended by your healthcare provider, Eat a well-balanced diet with a variety of nutrients, Get regular exercise (with guidance from your healthcare provider), Avoid alcohol, smoking, and illicit drugs",
+                  "Habits that support a healthy pregnancy: Get enough rest and quality sleep, Stay hydrated by drinking plenty of water, Manage stress levels through relaxation techniques, Educate yourself about pregnancy and childbirth, Seek support from healthcare professionals and a support network",
+                  "Foods that support a healthy pregnancy: Fruits and vegetables, Whole grains, Lean proteins (e.g., poultry, beans), Dairy products (e.g., milk, yogurt), Healthy fats (e.g., avocados, nuts)"
+                ]
+              },
+              {
+                "tag": "postnatal care",
+                "patterns": [
+                  "What should I do after giving birth to take care of myself and my baby?",
+                  "Tell me some tips for postnatal care.",
+                  "How can I recover and adjust to life after childbirth?",
+                  "What lifestyle changes should I make for a healthy postnatal period?"
+                ],
+                "responses": [
+                  "Tips for postnatal care: Get enough rest and prioritize sleep, Eat a nutritious diet to support healing and breastfeeding, Seek support from family, friends, and healthcare professionals, Attend postnatal check-ups as recommended, Manage stress levels and practice self-care",
+                  "Habits that support postnatal recovery: Take time to bond with your baby through skin-to-skin contact and breastfeeding, Practice gentle exercises and gradually increase physical activity, Communicate openly about your emotions and seek support for postpartum mood changes, Practice safe sleep habits for your baby, Establish routines and seek a balance between baby care and self-care",
+                  "Foods that support postnatal recovery: Iron-rich foods (e.g., lean meats, leafy greens), Foods high in omega-3 fatty acids (e.g., fatty fish, chia seeds), Calcium-rich foods (e.g., dairy products, fortified plant-based milk), Fiber-rich foods (e.g., whole grains, legumes)"
+                ]
+              },
+              {
+                "tag": "diarrhea relief",
+                "patterns": [
+                  "How can I find relief from diarrhea?",
+                  "Tell me some tips for managing diarrhea.",
+                  "What should I do to stop diarrhea?",
+                  "What lifestyle changes can help with diarrhea?"
+                ],
+                "responses": [
+                  "Tips for diarrhea relief: Stay hydrated by drinking plenty of fluids, especially water and clear broths, Eat bland, low-fiber foods such as rice, toast, and bananas, Avoid spicy and fatty foods, Get plenty of rest to aid in the healing process, Avoid caffeine and alcohol",
+                  "Habits that can help manage diarrhea: Practice good hand hygiene, Avoid dairy products and foods that can irritate the digestive system, Take over-the-counter medications (e.g., loperamide) as directed, Seek medical attention if diarrhea persists for more than a few days or if you experience severe symptoms, Avoid foods and beverages that can worsen diarrhea (e.g., caffeine, carbonated drinks)",
+                  "Foods that may aid in diarrhea relief: Bananas, Rice, Applesauce, Toast, Boiled potatoes"
+                ]
+              },
+              {
+                "tag": "constipation remedies",
+                "patterns": [
+                  "How can I find relief from constipation?",
+                  "Tell me some tips for managing constipation.",
+                  "What should I do to alleviate constipation?",
+                  "What lifestyle changes can help with constipation?"
+                ],
+                "responses": [
+                  "Tips for constipation relief: Increase fiber intake by consuming more fruits, vegetables, and whole grains, Stay hydrated by drinking plenty of water, Engage in regular physical activity to promote bowel movements, Establish a regular toilet routine, Consider over-the-counter laxatives or stool softeners (under the guidance of a healthcare provider)",
+                  "Habits that can help manage constipation: Establish a regular exercise routine to stimulate bowel movements, Try natural remedies such as prunes or prune juice, Avoid foods that can contribute to constipation (e.g., processed foods, low-fiber foods), Manage stress levels as stress can affect bowel function, Establish a relaxing environment in the bathroom",
+                  "Foods that may aid in relieving constipation: Prunes, Flaxseeds, Chia seeds, High-fiber cereals, Leafy greens"
+                ]
+              },
+              {
+                "tag": "fertility support",
+                "patterns": [
+                  "How can I support my fertility?",
+                  "Tell me some tips for enhancing fertility.",
+                  "What should I do to increase my chances of getting pregnant?",
+                  "What lifestyle changes promote fertility?"
+                ],
+                "responses": [
+                  "Tips for fertility support: Maintain a healthy weight through a balanced diet and regular exercise, Track ovulation to identify fertile days, Minimize stress and practice relaxation techniques, Avoid smoking and excessive alcohol consumption, Seek preconception care from a healthcare provider",
+                  "Habits that promote fertility: Eat a nutritious diet rich in fruits, vegetables, whole grains, and lean proteins, Ensure adequate intake of key nutrients (e.g., folic acid, iron, vitamin D), Avoid excessive caffeine intake, Get regular check-ups to address any underlying health issues, Maintain a regular menstrual cycle",
+                  "Foods that may support fertility: Leafy greens, Berries, Whole grains, Lean meats, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "headache management",
+                "patterns": [
+                  "How can I manage my headaches?",
+                  "Tell me some tips for headache relief.",
+                  "What should I do to alleviate headaches?",
+                  "What lifestyle changes can help with headaches?"
+                ],
+                "responses": [
+                  "Tips for headache management: Identify and avoid triggers (e.g., certain foods, stress), Apply a cold or warm compress to the affected area, Practice relaxation techniques (e.g., deep breathing, meditation), Maintain a regular sleep schedule, Stay hydrated",
+                  "Habits that can help manage headaches: Practice good posture, Limit excessive use of electronic devices, Avoid skipping meals, Manage stress levels through stress reduction techniques, Consider over-the-counter pain relievers (under the guidance of a healthcare provider)",
+                  "Foods that may aid in headache relief: Ginger, Magnesium-rich foods (e.g., spinach, almonds), Peppermint tea, Watermelon, Dark chocolate (in moderation)"
+                ]
+              },
+              {
+                "tag": "allergies in children",
+                "patterns": [
+                  "How can I manage allergies in children?",
+                  "Tell me some tips for dealing with allergies in children.",
+                  "What should I do to alleviate allergy symptoms in children?",
+                  "What lifestyle changes can help with allergies in children?"
+                ],
+                "responses": [
+                  "Tips for managing allergies in children: Identify and avoid allergens (e.g., pollen, pet dander), Keep the home environment clean and free from dust and mold, Use hypoallergenic bedding and pillows, Consider allergy-proofing the child's bedroom, Keep pets out of the child's bedroom",
+                  "Habits that can help manage allergies in children: Consult a healthcare provider for proper diagnosis and treatment, Educate the child about their allergies and how to avoid triggers, Encourage regular handwashing, Use air purifiers and humidifiers to improve air quality, Monitor and limit outdoor activities during high pollen seasons",
+                  "Foods that may help alleviate allergy symptoms: Foods rich in vitamin C (e.g., citrus fruits, strawberries), Foods with anti-inflammatory properties (e.g., fatty fish, walnuts), Local honey (in moderation), Probiotic-rich foods (e.g., yogurt, kefir), Quercetin-rich foods (e.g., apples, onions)"
+                ]
+              },
+              {
+                "tag": "healthy aging",
+                "patterns": [
+                  "How can I age healthily?",
+                  "Tell me some tips for healthy aging.",
+                  "What should I do to promote good health as I age?",
+                  "What lifestyle changes can help with healthy aging?"
+                ],
+                "responses": [
+                  "Tips for healthy aging: Eat a balanced diet with plenty of fruits, vegetables, whole grains, and lean proteins, Stay physically active with regular exercise, Maintain social connections and engage in meaningful activities, Get regular check-ups and screenings, Manage stress levels and practice relaxation techniques",
+                  "Habits that promote healthy aging: Protect your skin from the sun, Limit alcohol consumption and avoid smoking, Maintain a healthy weight, Get enough quality sleep, Keep your mind active through mental stimulation and learning",
+                  "Foods that support healthy aging: Berries, Leafy greens, Nuts and seeds, Fatty fish (e.g., salmon), Greek yogurt"
+                ]
+              },
+              {
+                "tag": "menopause support",
+                "patterns": [
+                  "How can I support my health during menopause?",
+                  "Tell me some tips for managing menopause symptoms.",
+                  "What should I do to alleviate menopause-related discomfort?",
+                  "What lifestyle changes can help with menopause?"
+                ],
+                "responses": [
+                  "Tips for menopause support: Eat a balanced diet with plenty of fruits, vegetables, and whole grains, Engage in regular physical activity to manage weight and promote bone health, Practice stress management techniques (e.g., meditation, yoga), Stay hydrated by drinking enough water, Seek support from healthcare providers and support groups",
+                  "Habits that can help manage menopause symptoms: Dress in layers to manage hot flashes, Use vaginal lubricants or moisturizers for vaginal dryness, Get enough calcium and vitamin D for bone health, Practice relaxation techniques to manage stress and improve sleep, Consider hormone replacement therapy (under the guidance of a healthcare provider)",
+                  "Foods that may alleviate menopause symptoms: Soy products, Flaxseeds, Fatty fish (e.g., salmon), Leafy greens, Calcium-rich foods (e.g., dairy products, fortified plant-based milk)"
+                ]
+              },
+              {
+                "tag": "bone density improvement",
+                "patterns": [
+                  "How can I improve my bone density?",
+                  "Tell me some tips for strengthening bones.",
+                  "What should I do to maintain healthy bones?",
+                  "What lifestyle changes can help improve bone density?"
+                ],
+                "responses": [
+                  "Tips for improving bone density: Get enough calcium through diet or supplements (under the guidance of a healthcare provider), Get enough vitamin D through sunlight exposure or supplements, Engage in weight-bearing exercises (e.g., walking, weightlifting), Avoid excessive alcohol consumption, Avoid smoking",
+                  "Habits that promote healthy bones: Include foods rich in calcium and vitamin D in your diet, Perform regular weight-bearing exercises, Avoid excessive caffeine intake, Get regular bone density screenings, Avoid crash diets or extreme weight loss",
+                  "Foods that support bone health: Dairy products (e.g., milk, cheese), Leafy greens, Almonds, Salmon, Fortified cereals"
+                ]
+              },
+              {
+                "tag": "liver detoxification",
+                "patterns": [
+                  "How can I support liver detoxification?",
+                  "Tell me some tips for detoxifying the liver.",
+                  "What should I do to promote liver health?",
+                  "What lifestyle changes can help with liver detoxification?"
+                ],
+                "responses": [
+                  "Tips for liver detoxification: Avoid or limit alcohol consumption, Stay hydrated by drinking plenty of water, Eat a balanced diet with fruits, vegetables, and whole grains, Limit processed foods and added sugars, Exercise regularly to support overall liver function",
+                  "Habits that promote liver health: Avoid exposure to environmental toxins and pollutants, Manage stress levels, Get enough quality sleep, Limit intake of medications and supplements (consult a healthcare provider), Get vaccinated against hepatitis A and B",
+                  "Foods that support liver health: Garlic, Grapefruit, Green tea, Turmeric, Leafy greens"
+                ]
+              },
+              {
+                "tag": "urinary tract infections",
+                "patterns": [
+                  "How can I manage urinary tract infections (UTIs)?",
+                  "Tell me some tips for preventing UTIs.",
+                  "What should I do to alleviate UTI symptoms?",
+                  "What lifestyle changes can help with UTI prevention?"
+                ],
+                "responses": [
+                  "Tips for managing urinary tract infections: Drink plenty of water to flush out bacteria, Avoid irritating substances (e.g., caffeine, alcohol), Use proper hygiene practices, Wipe from front to back after using the toilet, Consider over-the-counter pain relievers (under the guidance of a healthcare provider)",
+                  "Habits that can help prevent UTIs: Urinate before and after sexual activity, Avoid using irritating feminine products, Wear breathable cotton underwear, Stay hydrated to promote urinary system health, Avoid holding urine for prolonged periods",
+                  "Foods that may support urinary tract health: Cranberries, Blueberries, Yogurt, Celery, Cucumber"
+                ]
+              },
+              {
+                "tag": "eye strain relief",
+                "patterns": [
+                  "How can I find relief from eye strain?",
+                  "Tell me some tips for reducing eye strain.",
+                  "What should I do to alleviate eye strain?",
+                  "What lifestyle changes can help with eye strain?"
+                ],
+                "responses": [
+                  "Tips for relieving eye strain: Take regular breaks from screen time, Practice the 20-20-20 rule (every 20 minutes, look at something 20 feet away for 20 seconds), Adjust screen brightness and contrast, Ensure proper lighting in the room, Blink frequently to keep the eyes moist",
+                  "Habits that can help manage eye strain: Use artificial tears or lubricating eye drops, Maintain proper distance from screens (about arm's length away), Wear computer glasses or adjust the screen settings for optimal viewing, Keep the screen clean and free from glare, Ensure proper ergonomics of your workspace",
+                  "Foods that may support eye health: Carrots, Leafy greens, Citrus fruits, Fish (e.g., salmon), Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "hair loss prevention",
+                "patterns": [
+                  "How can I prevent hair loss?",
+                  "Tell me some tips for preventing hair loss.",
+                  "What should I do to maintain healthy hair?",
+                  "What lifestyle changes can help with hair loss prevention?"
+                ],
+                "responses": [
+                  "Tips for preventing hair loss: Maintain a balanced diet with sufficient nutrients (e.g., protein, iron, vitamins), Avoid excessive heat styling and harsh chemical treatments, Handle your hair gently when brushing or styling, Avoid tight hairstyles that pull on the hair, Manage stress levels",
+                  "Habits that can help prevent hair loss: Use a gentle shampoo and conditioner, Avoid over-brushing or over-manipulating your hair, Protect your hair from excessive sun exposure, Avoid smoking and limit alcohol consumption, Get regular trims to prevent split ends",
+                  "Foods that may promote hair health: Eggs, Spinach, Salmon, Nuts and seeds, Greek yogurt"
+                ]
+              },
+              {
+                "tag": "skin cancer awareness",
+                "patterns": [
+                  "How can I raise awareness about skin cancer?",
+                  "Tell me some tips for skin cancer prevention.",
+                  "What should I do to protect my skin from skin cancer?",
+                  "What lifestyle changes can help with skin cancer prevention?"
+                ],
+                "responses": [
+                  "Tips for skin cancer awareness and prevention: Use sunscreen with a high SPF and reapply regularly, Seek shade during peak sun hours, Wear protective clothing and a wide-brimmed hat, Avoid indoor tanning and excessive UV exposure, Perform regular self-examinations of the skin",
+                  "Habits that can help prevent skin cancer: Educate others about the importance of sun protection, Schedule regular skin cancer screenings with a dermatologist, Check your skin for any changes or suspicious moles, Avoid sunburns by taking appropriate precautions, Stay informed about the risks and warning signs of skin cancer",
+                  "Foods that may support skin health: Berries, Citrus fruits, Leafy greens, Fish (e.g., salmon), Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "weight gain strategies",
+                "patterns": [
+                  "How can I gain weight in a healthy way?",
+                  "Tell me some tips for healthy weight gain.",
+                  "What should I do to increase my weight?",
+                  "What lifestyle changes can help with weight gain?"
+                ],
+                "responses": [
+                  "Tips for healthy weight gain: Consume calorie-dense foods such as nuts, avocados, and nut butters, Eat frequent, balanced meals and snacks throughout the day, Include protein-rich foods in your diet to support muscle growth, Stay hydrated by drinking enough fluids, Engage in strength training exercises to build muscle mass",
+                  "Habits that can help with weight gain: Keep track of your calorie intake and ensure a surplus, Choose nutrient-dense foods rather than empty calories, Opt for healthy fats and carbohydrates, Listen to your body's hunger and fullness cues, Get regular check-ups to monitor overall health",
+                  "Foods that may aid in weight gain: Nut butters, Whole milk, Cheese, Quinoa, Protein-rich foods (e.g., lean meats, legumes)"
+                ]
+              },
+              {
+                "tag": "post-workout recovery",
+                "patterns": [
+                  "How can I recover after a workout?",
+                  "Tell me some tips for post-workout recovery.",
+                  "What should I do to help my body recover after exercise?",
+                  "What lifestyle changes can aid in post-workout recovery?"
+                ],
+                "responses": [
+                  "Tips for post-workout recovery: Hydrate by drinking water or a sports drink, Eat a balanced meal or snack that includes protein and carbohydrates within 30 minutes of exercising, Get enough quality sleep to support muscle recovery, Practice stretching and foam rolling to alleviate muscle soreness, Listen to your body and give yourself time to rest",
+                  "Habits that can aid in post-workout recovery: Include a cool-down period after exercise, Take contrast showers or use ice baths to reduce inflammation, Incorporate active recovery days (e.g., yoga, light walking), Consider using compression garments to improve circulation, Avoid excessive alcohol consumption and smoking",
+                  "Foods that may support post-workout recovery: Greek yogurt, Lean meats, Quinoa, Leafy greens, Berries"
+                ]
+              },
+              {
+                "tag": "yoga and mindfulness",
+                "patterns": [
+                  "How can yoga and mindfulness benefit me?",
+                  "Tell me some tips for practicing yoga and mindfulness.",
+                  "What should I do to incorporate yoga and mindfulness into my routine?",
+                  "What lifestyle changes can support a yoga and mindfulness practice?"
+                ],
+                "responses": [
+                  "Tips for practicing yoga and mindfulness: Find a quiet space and set aside dedicated time for practice, Start with beginner-friendly yoga poses and gradually progress, Practice deep breathing exercises to calm the mind and body, Focus on the present moment and let go of distractions, Seek guidance from experienced teachers or use online resources",
+                  "Habits that can support a yoga and mindfulness practice: Establish a regular routine for practice, Create a soothing environment with candles, cushions, or calming music, Limit exposure to technology and screens, Practice self-compassion and non-judgment, Engage in mindfulness activities throughout the day",
+                  "Foods that may support a yoga and mindfulness practice: Herbal teas (e.g., chamomile, lavender), Fresh fruits and vegetables, Nuts and seeds, Whole grains, Dark chocolate (in moderation)"
+                ]
+              },
+              {
+                "tag": "plant-based diets",
+                "patterns": [
+                  "How can a plant-based diet benefit me?",
+                  "Tell me some tips for following a plant-based diet.",
+                  "What should I do to adopt a plant-based lifestyle?",
+                  "What lifestyle changes can support a plant-based diet?"
+                ],
+                "responses": [
+                  "Tips for following a plant-based diet: Incorporate a variety of fruits, vegetables, legumes, whole grains, nuts, and seeds, Ensure adequate protein intake through plant-based sources (e.g., tofu, lentils, quinoa), Consider supplementation for nutrients like vitamin B12, Get creative with plant-based cooking and try new recipes",
+                  "Habits that can support a plant-based lifestyle: Read food labels and be mindful of hidden animal-derived ingredients, Plan meals and snacks in advance to ensure nutritional balance, Explore farmers markets and local produce for fresh and seasonal options, Stay informed about the health benefits and potential challenges of a plant-based diet, Connect with like-minded individuals or join online communities for support",
+                  "Foods that may support a plant-based diet: Leafy greens, Berries, Legumes, Whole grains, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "heartburn relief",
+                "patterns": [
+                  "How can I find relief from heartburn?",
+                  "Tell me some tips for managing heartburn.",
+                  "What should I do to alleviate heartburn symptoms?",
+                  "What lifestyle changes can help with heartburn relief?"
+                ],
+                "responses": [
+                  "Tips for heartburn relief: Eat smaller, more frequent meals rather than large meals, Avoid trigger foods that can worsen heartburn (e.g., spicy, fatty, or acidic foods), Stay upright after eating and avoid lying down immediately, Avoid tight clothing that puts pressure on the abdomen, Consider over-the-counter antacids or acid reducers (under the guidance of a healthcare provider)",
+                  "Habits that can help manage heartburn: Maintain a healthy weight to reduce pressure on the stomach, Practice stress management techniques, Avoid smoking and limit alcohol consumption, Elevate the head of your bed to prevent nighttime heartburn, Eat meals at least two to three hours before bedtime",
+                  "Foods that may help alleviate heartburn: Oatmeal, Ginger, Bananas, Melons, Non-citrus fruits"
+                ]
+              },
+              {
+                "tag": "detoxification methods",
+                "patterns": [
+                  "How can I detoxify my body?",
+                  "Tell me some tips for detoxification.",
+                  "What should I do to cleanse my body?",
+                  "What lifestyle changes can aid in detoxification?"
+                ],
+                "responses": [
+                  "Tips for detoxification: Stay hydrated by drinking plenty of water, Eat a balanced diet with whole foods and avoid processed foods, Limit or avoid alcohol and caffeine, Get regular exercise to support natural detoxification processes, Practice stress management techniques",
+                  "Habits that can aid in detoxification: Incorporate foods rich in antioxidants (e.g., berries, leafy greens), Engage in activities that promote sweating (e.g., sauna, exercise), Support liver health through foods like garlic and cruciferous vegetables, Consider intermittent fasting or juice cleanses (under the guidance of a healthcare provider), Get enough quality sleep for optimal cellular repair",
+                  "Foods that may support detoxification: Lemons, Garlic, Green tea, Cruciferous vegetables (e.g., broccoli, cauliflower), Turmeric"
+                ]
+              },
+              {
+                "tag": "hand hygiene",
+                "patterns": [
+                  "How can I maintain proper hand hygiene?",
+                  "Tell me some tips for hand hygiene.",
+                  "What should I do to keep my hands clean?",
+                  "What lifestyle changes can promote good hand hygiene?"
+                ],
+                "responses": [
+                  "Tips for hand hygiene: Wash your hands with soap and water for at least 20 seconds, especially after using the restroom and before eating, Use hand sanitizers with at least 60% alcohol when soap and water are not available, Avoid touching your face with unwashed hands, Cover your mouth and nose with a tissue or your elbow when coughing or sneezing, Avoid close contact with sick individuals",
+                  "Habits that can promote good hand hygiene: Keep your nails clean and trimmed, Avoid biting your nails or touching your face, Avoid sharing personal items such as towels and utensils, Teach children proper handwashing techniques, Practice good respiratory hygiene",
+                  "Products that can aid in hand hygiene: Antibacterial soap, Hand sanitizers, Hand moisturizers (to prevent dryness), Disposable tissues, Antibacterial wipes"
+                ]
+              },
+              {
+                "tag": "managing menopause symptoms",
+                "patterns": [
+                  "How can I manage symptoms during menopause?",
+                  "Tell me some tips for dealing with menopause symptoms.",
+                  "What should I do to alleviate menopause-related discomfort?",
+                  "What lifestyle changes can help with menopause symptoms?"
+                ],
+                "responses": [
+                  "Tips for managing menopause symptoms: Maintain a healthy lifestyle with a balanced diet and regular exercise, Stay hydrated by drinking plenty of water, Wear layered clothing to manage hot flashes, Practice stress management techniques (e.g., deep breathing, yoga), Get enough quality sleep",
+                  "Habits that can help manage menopause symptoms: Use over-the-counter lubricants or moisturizers for vaginal dryness, Avoid triggers that worsen hot flashes (e.g., caffeine, spicy foods), Engage in regular physical activity to support bone health, Consider hormone replacement therapy or other medications (under the guidance of a healthcare provider), Stay socially connected and seek support from loved ones",
+                  "Foods that may alleviate menopause symptoms: Soy products, Flaxseeds, Fatty fish (e.g., salmon), Leafy greens, Calcium-rich foods (e.g., dairy products, fortified plant-based milk)"
+                ]
+              },
+              {
+                "tag": "hormonal imbalance",
+                "patterns": [
+                  "How can I balance my hormones?",
+                  "Tell me some tips for managing hormonal imbalances.",
+                  "What should I do to alleviate symptoms of hormonal imbalance?",
+                  "What lifestyle changes can help with hormonal balance?"
+                ],
+                "responses": [
+                  "Tips for hormonal balance: Eat a balanced diet with plenty of fruits, vegetables, whole grains, and lean proteins, Engage in regular physical activity to support hormone regulation, Get enough quality sleep to support hormonal health, Manage stress levels through relaxation techniques, Avoid exposure to endocrine-disrupting chemicals",
+                  "Habits that can help manage hormonal imbalances: Maintain a healthy weight, Avoid excessive caffeine and alcohol consumption, Seek medical advice for hormonal imbalances, Consider hormone replacement therapy or other medications (under the guidance of a healthcare provider), Stay informed about the signs and symptoms of hormonal imbalances",
+                  "Foods that may support hormonal balance: Omega-3 fatty acids (e.g., fatty fish, flaxseeds), Leafy greens, Cruciferous vegetables (e.g., broccoli, cauliflower), Probiotic-rich foods (e.g., yogurt, kefir), Foods rich in vitamin D (e.g., fortified dairy products, fatty fish)"
+                ]
+              },
+              {
+                "tag": "stress-related hair loss",
+                "patterns": [
+                  "How can I manage hair loss caused by stress?",
+                  "Tell me some tips for dealing with stress-related hair loss.",
+                  "What should I do to alleviate hair loss due to stress?",
+                  "What lifestyle changes can help with stress-related hair loss?"
+                ],
+                "responses": [
+                  "Tips for managing stress-related hair loss: Identify and manage sources of stress in your life, Practice stress reduction techniques such as meditation or deep breathing exercises, Prioritize self-care activities and make time for relaxation, Get enough quality sleep to support hair health, Consult a healthcare provider for further evaluation and treatment options",
+                  "Habits that can help manage stress-related hair loss: Eat a balanced diet with sufficient nutrients for hair health (e.g., protein, iron, vitamins), Avoid excessive heat styling and harsh hair treatments, Handle your hair gently when brushing or styling, Avoid tight hairstyles that pull on the hair, Seek support from loved ones or consider therapy for stress management",
+                  "Foods that may promote hair health: Eggs, Spinach, Salmon, Nuts and seeds, Greek yogurt"
+                ]
+              },
+              {
+                "tag": "gut health",
+                "patterns": [
+                  "How can I improve my gut health?",
+                  "Tell me some tips for maintaining a healthy gut.",
+                  "What should I do to support a healthy gut?",
+                  "What lifestyle changes can help with gut health?"
+                ],
+                "responses": [
+                  "Tips for improving gut health: Eat a diverse range of fruits, vegetables, whole grains, and legumes to promote a healthy gut microbiota, Include fermented foods in your diet (e.g., yogurt, sauerkraut), Stay hydrated by drinking enough water, Manage stress levels through relaxation techniques, Get regular exercise to support gut motility",
+                  "Habits that can help with gut health: Avoid excessive consumption of processed foods and added sugars, Limit intake of artificial sweeteners, Consider probiotic supplements or probiotic-rich foods, Practice mindful eating and chew food thoroughly, Seek guidance from a healthcare provider if experiencing persistent digestive issues",
+                  "Foods that may support gut health: Yogurt, Kimchi, Kefir, Whole grains, Ginger"
+                ]
+              },
+              {
+                "tag": "sugar addiction management",
+                "patterns": [
+                  "How can I manage my sugar addiction?",
+                  "Tell me some tips for reducing sugar cravings.",
+                  "What should I do to break free from sugar addiction?",
+                  "What lifestyle changes can help with sugar addiction management?"
+                ],
+                "responses": [
+                  "Tips for managing sugar addiction: Gradually reduce sugar intake to avoid withdrawal symptoms, Identify and avoid trigger foods and situations, Read food labels to be mindful of hidden sugars, Find healthier alternatives to satisfy sweet cravings (e.g., fruits, dark chocolate in moderation), Seek support from healthcare professionals or support groups",
+                  "Habits that can help manage sugar addiction: Stock your pantry with healthy, sugar-free snacks, Practice stress management techniques to avoid emotional eating, Get regular exercise to regulate blood sugar levels and reduce cravings, Stay hydrated by drinking plenty of water, Practice mindful eating and pay attention to hunger and fullness cues",
+                  "Foods that may help manage sugar cravings: Berries, Apples, Cinnamon, Nuts and seeds, Greek yogurt"
+                ]
+              },
+              {
+                "tag": "boosting energy levels",
+                "patterns": [
+                  "How can I boost my energy levels?",
+                  "Tell me some tips for increasing energy and reducing fatigue.",
+                  "What should I do to improve my energy levels?",
+                  "What lifestyle changes can help with boosting energy?"
+                ],
+                "responses": [
+                  "Tips for boosting energy levels: Get enough quality sleep and establish a regular sleep schedule, Stay hydrated by drinking plenty of water, Eat a balanced diet with a mix of carbohydrates, proteins, and healthy fats, Engage in regular physical activity to improve circulation and energy levels, Manage stress levels through relaxation techniques",
+                  "Habits that can help with boosting energy: Limit caffeine intake and avoid excessive alcohol consumption, Take regular breaks and practice stress-relieving activities throughout the day, Prioritize activities that bring you joy and fulfillment, Avoid excessive use of electronic devices and establish a bedtime routine to promote better sleep, Consider dietary supplements or vitamins (under the guidance of a healthcare provider)",
+                  "Foods that may boost energy levels: Whole grains, Fruits and vegetables, Lean proteins (e.g., chicken, fish), Nuts and seeds, Green tea"
+                ]
+              },
+              {
+                "tag": "sports injury prevention",
+                "patterns": [
+                  "How can I prevent sports injuries?",
+                  "Tell me some tips for avoiding injuries during sports activities.",
+                  "What should I do to protect myself from sports injuries?",
+                  "What lifestyle changes can help with sports injury prevention?"
+                ],
+                "responses": [
+                  "Tips for sports injury prevention: Warm up before physical activity with dynamic stretching and light exercises, Wear appropriate protective gear for your sport, Listen to your body and avoid pushing through pain, Incorporate strength and conditioning exercises into your training routine, Take rest days to allow for recovery",
+                  "Habits that can help prevent sports injuries: Maintain good form and technique during sports activities, Cross-train to build overall strength and flexibility, Gradually increase intensity and duration of training, Stay hydrated and fuel your body with a balanced diet, Get regular check-ups to address any underlying health issues",
+                  "Foods that may support sports injury prevention: Lean proteins (e.g., chicken, turkey), Whole grains, Fruits and vegetables, Healthy fats (e.g., avocado, nuts), Low-fat dairy products"
+                ]
+              },
+              {
+                "tag": "travel health tips",
+                "patterns": [
+                  "What are some health tips for traveling?",
+                  "Tell me some tips for staying healthy while traveling.",
+                  "How can I take care of my health during travel?",
+                  "What lifestyle changes should I make when traveling?"
+                ],
+                "responses": [
+                  "Tips for staying healthy while traveling: Stay hydrated by drinking plenty of water, especially during flights, Pack a travel first aid kit with essentials such as medications, bandages, and hand sanitizer, Practice good hand hygiene and carry sanitizing wipes, Get vaccinated and take necessary precautions for specific destinations, Prioritize sleep and rest to support your immune system",
+                  "Habits that can help maintain health during travel: Eat balanced meals and opt for healthy food choices, Protect yourself from sunburn by wearing sunscreen and appropriate clothing, Stay active by engaging in physical activity or walking during sightseeing, Get enough sleep to support your overall well-being, Take breaks and avoid excessive travel fatigue",
+                  "Foods that may support travel health: Portable snacks such as nuts, fruits, and energy bars, Bottled water or filtered water if necessary, Fresh produce and salads from trusted sources, Yogurt or probiotic-rich foods to support digestion, Local cuisine in moderation to experience new flavors"
+                ]
+              },
+              {
+                "tag": "childhood vaccinations",
+                "patterns": [
+                  "Why are childhood vaccinations important?",
+                  "Tell me about the importance of vaccinating children.",
+                  "What are the benefits of childhood vaccinations?",
+                  "What vaccines should children receive?"
+                ],
+                "responses": [
+                  "Childhood vaccinations are important for several reasons: They protect children from serious diseases and their complications, they help prevent the spread of diseases in the community, they contribute to herd immunity, and they are a safe and effective way to safeguard children's health.",
+                  "Vaccinating children provides protection against diseases such as measles, polio, diphtheria, pertussis (whooping cough), tetanus, hepatitis, and more. Vaccines have been extensively tested and proven to be safe and effective in preventing these diseases.",
+                  "Some common childhood vaccines include the MMR vaccine (measles, mumps, and rubella), DTaP vaccine (diphtheria, tetanus, and pertussis), IPV vaccine (polio), Hepatitis B vaccine, and the Varicella vaccine (chickenpox). The specific vaccines recommended may vary by country and region.",
+                  "It's important to follow the recommended vaccination schedule provided by healthcare professionals to ensure that children receive the necessary immunizations at the appropriate ages."
+                ]
+              },
+              {
+                "tag": "nutrition for athletes",
+                "patterns": [
+                  "What should athletes eat for optimal nutrition?",
+                  "Tell me about nutrition for athletes.",
+                  "How can athletes improve their diet for better performance?",
+                  "What should be included in the diet of an athlete?"
+                ],
+                "responses": [
+                  "Optimal nutrition for athletes includes a well-balanced diet that provides adequate energy, carbohydrates, proteins, healthy fats, vitamins, and minerals. Athletes should focus on consuming nutrient-dense foods to support performance and recovery.",
+                  "Key elements of an athlete's diet include carbohydrates for energy, proteins for muscle repair and growth, healthy fats for sustained energy, and hydration for optimal performance. It's also important to consume a variety of fruits, vegetables, and whole grains for essential vitamins and minerals.",
+                  "Athletes should aim to consume a mix of complex carbohydrates (e.g., whole grains, fruits, vegetables), lean proteins (e.g., chicken, fish, tofu), and healthy fats (e.g., avocados, nuts, olive oil). Staying hydrated by drinking plenty of water is also crucial before, during, and after exercise.",
+                  "It's recommended that athletes work with sports nutrition professionals or registered dietitians to develop individualized nutrition plans based on their specific needs, goals, and sport requirements."
+                ]
+              },
+              {
+                "tag": "cognitive function improvement",
+                "patterns": [
+                  "How can I improve my cognitive function?",
+                  "Tell me some tips for enhancing cognitive function.",
+                  "What should I do to boost my brainpower?",
+                  "What lifestyle changes can help improve cognitive function?"
+                ],
+                "responses": [
+                  "Tips for improving cognitive function: Engage in regular physical exercise to promote brain health, Challenge your mind with puzzles, reading, or learning new skills, Get enough quality sleep to support brain function, Maintain a balanced diet with foods rich in omega-3 fatty acids, antioxidants, and vitamins, Manage stress levels through relaxation techniques",
+                  "Habits that can help improve cognitive function: Stay socially active and maintain strong social connections, Limit alcohol consumption and avoid smoking, Stay mentally active through lifelong learning, Manage chronic health conditions (e.g., diabetes, high blood pressure) to protect brain health, Practice mindfulness and meditation to improve focus and attention",
+                  "Foods that may support cognitive function: Fatty fish (e.g., salmon), Blueberries, Turmeric, Dark chocolate (in moderation), Leafy greens"
+                ]
+              },
+              {
+                "tag": "food allergies",
+                "patterns": [
+                  "How can I manage food allergies?",
+                  "Tell me some tips for dealing with food allergies.",
+                  "What should I do if I have a food allergy?",
+                  "What lifestyle changes can help with food allergies?"
+                ],
+                "responses": [
+                  "Tips for managing food allergies: Identify and avoid trigger foods or ingredients, Read food labels carefully to identify potential allergens, Inform others about your food allergies when dining out or attending events, Carry an epinephrine auto-injector if prescribed by a healthcare provider, Seek support from allergists or support groups",
+                  "Habits that can help with food allergies: Educate yourself about hidden sources of allergens, Prepare meals at home to have better control over ingredients, Communicate with food service staff to ensure food safety, Establish an emergency plan and share it with family and close contacts, Stay updated on food labeling regulations and allergen labeling",
+                  "Foods that are commonly allergenic: Peanuts, Tree nuts, Shellfish, Fish, Eggs, Dairy products, Soy, Wheat, Sesame seeds"
+                ]
+              },
+              {
+                "tag": "eating disorders support",
+                "patterns": [
+                  "How can I find support for eating disorders?",
+                  "Tell me some tips for seeking help with eating disorders.",
+                  "What should I do if I or someone I know has an eating disorder?",
+                  "What support is available for eating disorders?"
+                ],
+                "responses": [
+                  "Tips for seeking help with eating disorders: Reach out to a healthcare professional, such as a doctor or therapist, who specializes in eating disorders, Join support groups or seek individual therapy for additional support, Educate yourself and your loved ones about eating disorders, Practice self-care and focus on overall well-being, Be patient and kind to yourself throughout the recovery process",
+                  "Habits that can support recovery from eating disorders: Surround yourself with a supportive network of friends and family, Challenge negative thoughts and beliefs about body image and food, Establish a regular eating pattern and work with professionals to develop a healthy meal plan, Engage in activities that bring joy and fulfillment, Seek professional help if necessary",
+                  "Support available for eating disorders: Therapy options such as cognitive-behavioral therapy (CBT), dialectical behavior therapy (DBT), and family-based therapy (FBT), Support groups and online communities for individuals with eating disorders, Nutritional counseling and meal support from registered dietitians, Helplines and crisis intervention services specifically for eating disorders"
+                ]
+              },
+              {
+                "tag": "sun safety and sunburn prevention",
+                "patterns": [
+                  "How can I protect myself from sunburn?",
+                  "Tell me some tips for sun safety and preventing sunburn.",
+                  "What should I do to avoid getting sunburned?",
+                  "What lifestyle changes can help with sunburn prevention?"
+                ],
+                "responses": [
+                  "Tips for sun safety and sunburn prevention: Apply sunscreen with a high SPF (at least 30) to all exposed skin, Seek shade during peak sun hours (usually between 10 am and 4 pm), Wear protective clothing, including hats and sunglasses, to minimize sun exposure, Reapply sunscreen every two hours or more frequently if sweating or swimming",
+                  "Habits that can help prevent sunburn: Limit direct sun exposure, especially during peak hours, Use broad-spectrum sunscreen that protects against UVA and UVB rays, Avoid indoor tanning and sunlamps, Stay hydrated by drinking enough water, Perform regular self-checks for any changes in moles or skin",
+                  "Products that aid in sunburn prevention: Sunscreen with a high SPF, Broad-brimmed hats, UV-protective clothing, Sunglasses with UV protection, After-sun lotions or aloe vera gel for soothing sunburned skin"
+                ]
+              },
+              {
+                "tag": "managing chronic pain",
+                "patterns": [
+                  "How can I manage chronic pain?",
+                  "Tell me some tips for dealing with chronic pain.",
+                  "What should I do to alleviate chronic pain?",
+                  "What lifestyle changes can help with managing chronic pain?"
+                ],
+                "responses": [
+                  "Tips for managing chronic pain: Work with healthcare professionals to develop a personalized pain management plan, Practice relaxation techniques such as deep breathing and meditation, Engage in gentle exercise or physical therapy to improve mobility and strength, Use heat or cold therapy to alleviate pain, Seek support from support groups or therapy to cope with the emotional aspects of chronic pain",
+                  "Habits that can help manage chronic pain: Prioritize quality sleep to support overall well-being and pain management, Manage stress levels through stress reduction techniques, Use over-the-counter or prescribed pain medications as recommended by healthcare professionals, Experiment with alternative therapies such as acupuncture or massage, Maintain a balanced diet and manage weight to minimize stress on the body",
+                  "Foods that may help manage chronic pain: Ginger, Turmeric, Berries, Fatty fish (e.g., salmon), Dark chocolate (in moderation)"
+                ]
+              },
+              {
+                "tag": "coping with grief and loss",
+                "patterns": [
+                  "How can I cope with grief and loss?",
+                  "Tell me some tips for dealing with grief and loss.",
+                  "What should I do to manage the emotions of grief and loss?",
+                  "What lifestyle changes can help with coping with grief?"
+                ],
+                "responses": [
+                  "Tips for coping with grief and loss: Allow yourself to grieve and feel your emotions, Seek support from loved ones, friends, or support groups, Take care of yourself physically by maintaining a healthy routine, Engage in activities that bring you comfort and solace, Consider therapy or counseling to work through the grieving process",
+                  "Habits that can help with coping with grief: Practice self-compassion and be patient with yourself throughout the grieving process, Establish a daily self-care routine to support your overall well-being, Express your emotions through writing, art, or other creative outlets, Honor the memory of your loved one through rituals or remembrance activities, Allow yourself to seek professional help if needed",
+                  "Activities that may aid in coping with grief: Talking about your feelings with a trusted person, Engaging in gentle exercise or physical activity, Mindfulness or meditation practices, Journaling or writing about your thoughts and emotions, Creating a memory box or keepsake to honor your loved one"
+                ]
+              },
+              {
+                "tag": "smoking cessation",
+                "patterns": [
+                  "How can I quit smoking?",
+                  "Tell me some tips for quitting smoking.",
+                  "What should I do to stop smoking?",
+                  "What lifestyle changes can help with smoking cessation?"
+                ],
+                "responses": [
+                  "Tips for quitting smoking: Set a quit date and make a plan to stick to it, Identify your smoking triggers and develop strategies to avoid or cope with them, Seek support from friends, family, or support groups, Consider nicotine replacement therapy or other medications to help with cravings, Stay positive and reward yourself for milestones reached",
+                  "Habits that can help with smoking cessation: Engage in physical activity to reduce cravings and improve overall well-being, Practice stress management techniques to cope with triggers and withdrawal symptoms, Find healthy alternatives to smoking, such as chewing gum or engaging in a hobby, Stay motivated by reminding yourself of the health benefits and cost savings of quitting",
+                  "Products or methods that may aid in smoking cessation: Nicotine patches, Nicotine gum or lozenges, Prescription medications (under the guidance of a healthcare provider), Behavioral therapy or counseling, Support from quit smoking hotlines or online communities"
+                ]
+              },
+              {
+                "tag": "managing high blood pressure during pregnancy",
+                "patterns": [
+                  "How can I manage high blood pressure during pregnancy?",
+                  "Tell me some tips for dealing with high blood pressure during pregnancy.",
+                  "What should I do to alleviate high blood pressure while pregnant?",
+                  "What lifestyle changes can help with managing high blood pressure in pregnancy?"
+                ],
+                "responses": [
+                  "Tips for managing high blood pressure during pregnancy: Attend regular prenatal check-ups to monitor blood pressure and overall health, Follow a healthy and balanced diet recommended by your healthcare provider, Limit sodium intake and avoid foods high in salt, Get enough rest and prioritize sleep, Manage stress levels through relaxation techniques",
+                  "Habits that can help manage high blood pressure during pregnancy: Stay physically active with exercises approved by your healthcare provider, Avoid smoking and limit alcohol consumption, Avoid activities or situations that can increase blood pressure, Take prescribed medications as directed by your healthcare provider, Seek support from healthcare professionals specializing in prenatal care",
+                  "Foods that may support managing high blood pressure: Fruits and vegetables, Whole grains, Lean proteins, Low-fat dairy products, Foods rich in potassium (e.g., bananas, oranges, spinach)"
+                ]
+              },
+              {
+                "tag": "joint injury rehabilitation",
+                "patterns": [
+                  "How can I rehabilitate a joint injury?",
+                  "Tell me some tips for recovering from a joint injury.",
+                  "What should I do to rehabilitate a joint injury?",
+                  "What lifestyle changes can help with joint injury rehabilitation?"
+                ],
+                "responses": [
+                  "Tips for joint injury rehabilitation: Follow the recommended treatment plan provided by your healthcare provider or physical therapist, Engage in targeted exercises to strengthen the affected joint and surrounding muscles, Apply ice or heat therapy as advised by healthcare professionals, Avoid activities that worsen pain or put strain on the joint, Give yourself enough rest and prioritize sleep for optimal healing",
+                  "Habits that can aid in joint injury rehabilitation: Use assistive devices or braces to support the joint during recovery, Practice proper body mechanics and joint protection techniques, Maintain a healthy weight to reduce stress on the joints, Stay consistent with physical therapy exercises and rehabilitation protocols, Communicate openly with your healthcare provider about any concerns or changes in symptoms",
+                  "Foods that may support joint health and recovery: Foods rich in omega-3 fatty acids (e.g., fatty fish, flaxseeds), Leafy greens, Berries, Turmeric, Nuts and seeds"
+                ]
+              },
+              {
+                "tag": "managing panic attacks",
+                "patterns": [
+                  "How can I manage panic attacks?",
+                  "Tell me some tips for dealing with panic attacks.",
+                  "What should I do to alleviate panic attack symptoms?",
+                  "What lifestyle changes can help with managing panic attacks?"
+                ],
+                "responses": [
+                  "Tips for managing panic attacks: Practice deep breathing exercises to help regulate your breathing during an attack, Challenge and reframe negative thoughts that contribute to panic attacks, Engage in relaxation techniques such as progressive muscle relaxation or guided imagery, Seek support from a mental health professional who specializes in anxiety disorders, Consider medication options under the guidance of a healthcare provider",
+                  "Habits that can help manage panic attacks: Establish a daily self-care routine that includes activities that promote relaxation and stress reduction, Avoid or limit caffeine and alcohol, Get enough quality sleep to support overall well-being, Engage in regular physical activity to reduce anxiety and improve mood, Build a strong support network of friends and family",
+                  "Products or methods that may aid in managing panic attacks: Breathing exercises apps or guided meditation apps, Stress balls or fidget toys for grounding techniques, Journaling or writing about your thoughts and emotions, Self-help books or online resources for anxiety management, Medications prescribed by a healthcare provider"
+                ]
+              },
+              {
+                "tag": "coping with seasonal changes",
+                "patterns": [
+                  "How can I cope with seasonal changes?",
+                  "Tell me some tips for dealing with changes in seasons.",
+                  "What should I do to adjust to seasonal transitions?",
+                  "What lifestyle changes can help with coping with seasonal changes?"
+                ],
+                "responses": [
+                  "Tips for coping with seasonal changes: Embrace the positive aspects of each season and find activities that you enjoy, Practice self-care activities that boost your mood and well-being, Stay socially connected with loved ones to combat feelings of isolation, Get enough natural sunlight or consider light therapy for seasonal affective disorder (SAD), Maintain a healthy lifestyle with balanced nutrition and regular exercise",
+                  "Habits that can help cope with seasonal changes: Engage in outdoor activities or hobbies that align with the season, Practice stress management techniques to reduce the impact of seasonal stressors, Adjust your daily routine to accommodate changes in daylight and temperature, Seek support from healthcare professionals if experiencing significant seasonal mood changes or depression",
+                  "Activities that may aid in coping with seasonal changes: Taking nature walks or hikes to appreciate the beauty of the changing seasons, Trying new seasonal recipes or cooking with seasonal ingredients, Decorating your living space to reflect the spirit of each season, Engaging in seasonal festivities and celebrations, Engaging in activities that bring you joy and boost your mood"
+                ]
+              },
+              {
+                "tag": "Respiratory Health",
+                "patterns": [
+                "How can I improve my respiratory health?",
+                "Tell me some tips for maintaining healthy lungs.",
+                "What should I do to keep my respiratory system healthy?",
+                "What lifestyle changes can promote better respiratory health?"
+                ],
+                "responses": [
+                "Tips for improving respiratory health: Avoid exposure to pollutants and irritants, such as cigarette smoke and air pollution, Practice deep breathing exercises to strengthen the lungs, Stay hydrated by drinking enough water, Maintain a clean and dust-free environment, Get regular exercise to promote lung capacity and function"
+                ]
                 },
                 {
-                  "tag": "Influenza (Flu) symptoms",
-                  "patterns": [
-                    "fever",
-                    "cough",
-                    "sore throat",
-                    "runny or stuffy nose",
-                    "muscle or body aches",
-                    "headache",
-                    "fatigue"
-                  ],
-                  "responses": [
-                    "It appears that you have symptoms of the flu."
-                  ]
+                "tag": "Diabetes Management",
+                "patterns": [
+                "How can I manage my diabetes?",
+                "Tell me some tips for diabetes control.",
+                "What should I do to keep my blood sugar levels stable?",
+                "What lifestyle changes can help with diabetes management?"
+                ],
+                "responses": [
+                "Tips for managing diabetes: Follow a well-balanced diet that includes whole grains, lean proteins, fruits, vegetables, and healthy fats, Monitor blood sugar levels regularly and take prescribed medication as directed, Engage in regular physical activity to improve insulin sensitivity, Manage stress levels and prioritize self-care, Maintain regular check-ups with healthcare professionals"
+                ]
                 },
                 {
-                  "tag": "Common cold symptoms",
-                  "patterns": [
-                    "runny or stuffy nose",
-                    "sneezing",
-                    "sore throat",
-                    "cough",
-                    "mild headache",
-                    "fatigue",
-                    "mild body aches"
-                  ],
-                  "responses": [
-                    "It seems like you may have a common cold."
-                  ]
+                "tag": "Stress Reduction Techniques",
+                "patterns": [
+                "How can I reduce stress in my life?",
+                "Tell me some tips for stress management.",
+                "What should I do to relax and unwind?",
+                "What lifestyle changes can help with stress reduction?"
+                ],
+                "responses": [
+                "Tips for stress reduction: Practice relaxation techniques such as deep breathing, meditation, or yoga, Engage in regular exercise to release endorphins and reduce stress, Prioritize self-care activities that bring you joy and relaxation, Maintain a healthy work-life balance and set boundaries, Seek support from friends, family, or professionals if needed"
+                ]
                 },
                 {
-                  "tag": "Asthma symptoms",
-                  "patterns": [
-                    "shortness of breath",
-                    "wheezing",
-                    "chest tightness",
-                    "coughing",
-                    "fatigue",
-                    "difficulty sleeping"
-                  ],
-                  "responses": [
-                    "It's possible that you are experiencing symptoms of asthma."
-                  ]
+                "tag": "Weight Loss Strategies",
+                "patterns": [
+                "How can I lose weight effectively?",
+                "Tell me some tips for successful weight loss.",
+                "What should I do to achieve my weight loss goals?",
+                "What lifestyle changes can promote weight loss?"
+                ],
+                "responses": [
+                "Tips for weight loss: Follow a balanced and calorie-controlled diet, focusing on whole foods and portion control, Incorporate regular physical activity or exercise into your routine, Set realistic goals and track your progress, Stay consistent and make sustainable changes to your eating and exercise habits, Seek support from healthcare professionals or weight loss programs if needed"
+                ]
                 },
                 {
-                  "tag": "Hypertension symptoms",
-                  "patterns": [
-                    "headaches",
-                    "dizziness",
-                    "blurred vision",
-                    "shortness of breath",
-                    "chest pain",
-                    "fatigue",
-                    "irregular heartbeat"
-                  ],
-                  "responses": [
-                    "It seems that you might have high blood pressure (hypertension)."
-                  ]
+                "tag": "Cancer Awareness and Support",
+                "patterns": [
+                "How can I raise cancer awareness?",
+                "Tell me some tips for supporting cancer patients.",
+                "What should I do to contribute to the fight against cancer?",
+                "What lifestyle changes can reduce the risk of cancer?"
+                ],
+                "responses": [
+                "Tips for cancer awareness and support: Educate yourself and others about the signs, symptoms, and risk factors of various cancers, Participate in cancer awareness events and fundraisers, Offer support and encouragement to cancer patients and their families, Donate to reputable cancer research organizations, Practice healthy lifestyle habits, such as maintaining a balanced diet, exercising regularly, and avoiding tobacco and excessive alcohol consumption"
+                ]
                 },
                 {
-                  "tag": "Arthritis symptoms",
-                  "patterns": [
-                    "joint pain",
-                    "joint stiffness",
-                    "swelling",
-                    "redness around the joint",
-                    "decreased range of motion",
-                    "fatigue"
-                  ],
-                  "responses": [
-                    "Based on the symptoms you described, it could be arthritis."
-                  ]
+                "tag": "Digestive Disorders Management",
+                "patterns": [
+                "How can I manage digestive disorders?",
+                "Tell me some tips for maintaining digestive health.",
+                "What should I do to alleviate digestive issues?",
+                "What lifestyle changes can promote better digestion?"
+                ],
+                "responses": [
+                "Tips for managing digestive disorders: Follow a well-balanced diet with plenty of fiber-rich foods, Stay hydrated by drinking enough water, Practice portion control and mindful eating, Avoid trigger foods that worsen your symptoms, Manage stress levels and practice relaxation techniques, Consult with healthcare professionals for proper diagnosis and treatment"
+                ]
+                },
+                {
+                "tag": "Cognitive Enhancement",
+                "patterns": [
+                "How can I enhance my cognitive function?",
+                "Tell me some tips for improving brain health.",
+                "What should I do to boost my memory and mental clarity?",
+                "What lifestyle changes can support cognitive enhancement?"
+                ],
+                "responses": [
+                "Tips for cognitive enhancement: Engage in regular mental stimulation, such as puzzles, reading, or learning new skills, Get enough quality sleep to support brain health and memory consolidation, Follow a brain-healthy diet rich in fruits, vegetables, whole grains, and omega-3 fatty acids, Manage stress levels and practice relaxation techniques, Stay socially active and maintain strong relationships"
+                ]
+                },
+                {
+                "tag": "Bone and Joint Health",
+                "patterns": [
+                "How can I improve my bone and joint health?",
+                "Tell me some tips for maintaining healthy bones and joints.",
+                "What should I do to keep my bones and joints strong?",
+                "What lifestyle changes can promote better bone and joint health?"
+                ],
+                "responses": [
+                "Tips for bone and joint health: Follow a well-balanced diet rich in calcium and vitamin D, Engage in weight-bearing exercises or strength training to promote bone density and muscle strength, Maintain a healthy weight to reduce stress on the joints, Practice good posture and body mechanics, Use proper protective equipment during physical activities"
+                ]
+                },
+                {
+                "tag": "Skin Care Tips and Advice",
+                "patterns": [
+                "How can I take care of my skin?",
+                "Tell me some tips for maintaining healthy skin.",
+                "What should I do to keep my skin looking radiant?",
+                "What lifestyle changes can promote better skin health?"
+                ],
+                "responses": [
+                "Tips for skin care: Cleanse your skin gently and moisturize regularly, Protect your skin from sun damage by using sunscreen and wearing protective clothing, Eat a balanced diet with plenty of fruits, vegetables, and antioxidants, Stay hydrated by drinking enough water, Avoid smoking and limit alcohol consumption, Get enough sleep and manage stress levels"
+                ]
+                },
+                {
+                "tag": "Healthy Aging Tips for Seniors",
+                "patterns": [
+                "How can seniors maintain good health as they age?",
+                "Tell me some tips for healthy aging.",
+                "What should seniors do to stay active and independent?",
+                "What lifestyle changes can promote healthy aging?"
+                ],
+                "responses": [
+                "Tips for healthy aging: Eat a nutrient-rich diet with plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats, Stay physically active with exercises that promote strength, flexibility, and cardiovascular health, Maintain social connections and engage in meaningful activities, Get regular check-ups and screenings for age-related health issues, Prioritize self-care and practice stress management techniques"
+                ]
+                },
+                {
+                "tag": "Women's Health Issues",
+                "patterns": [
+                "How can women maintain good health?",
+                "Tell me some tips for women's health and wellness.",
+                "What should women do to take care of their bodies?",
+                "What lifestyle changes can support women's health?"
+                ],
+                "responses": [
+                "Tips for women's health: Schedule regular check-ups and screenings, including gynecological exams and breast health screenings, Maintain a well-balanced diet with plenty of nutrients and fiber, Exercise regularly to support overall health and manage stress, Practice self-care activities that promote relaxation and well-being, Seek support from healthcare professionals for any specific health concerns"
+                ]
+                },
+                {
+                "tag": "Men's Health Issues",
+                "patterns": [
+                "How can men maintain good health?",
+                "Tell me some tips for men's health and wellness.",
+                "What should men do to take care of their bodies?",
+                "What lifestyle changes can support men's health?"
+                ],
+                "responses": [
+                "Tips for men's health: Schedule regular check-ups and screenings, including prostate health screenings, Maintain a well-balanced diet with plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats, Engage in regular physical activity to support cardiovascular health and maintain a healthy weight, Manage stress levels and practice relaxation techniques, Seek support from healthcare professionals for any specific health concerns"
+                ]
+                },
+                {
+                "tag": "Immune System Boosting",
+                "patterns": [
+                "How can I boost my immune system?",
+                "Tell me some tips for strengthening the immune system.",
+                "What should I do to support a healthy immune system?",
+                "What lifestyle changes can promote better immune function?"
+                ],
+                "responses": [
+                "Tips for boosting the immune system: Eat a well-balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats, Get enough quality sleep to support immune function, Manage stress levels and practice relaxation techniques, Engage in regular physical activity to support overall health, Stay hydrated by drinking enough water"
+                ]
+                },
+                {
+                "tag": "Eye Health and Vision Care",
+                "patterns": [
+                "How can I take care of my eyes and maintain good vision?",
+                "Tell me some tips for maintaining healthy eyes.",
+                "What should I do to support eye health?",
+                "What lifestyle changes can promote better vision?"
+                ],
+                "responses": [
+                "Tips for eye health and vision care: Schedule regular eye exams to monitor vision and detect any potential issues, Protect your eyes from harmful UV rays by wearing sunglasses and avoiding excessive screen time, Maintain a balanced diet with foods rich in antioxidants and nutrients beneficial for eye health, Practice good hygiene and avoid touching or rubbing your eyes excessively, Give your eyes regular breaks during prolonged screen use"
+                ]
+                },
+                {
+                "tag": "Healthy Hair Care Tips",
+                "patterns": [
+                "How can I take care of my hair and keep it healthy?",
+                "Tell me some tips for maintaining healthy hair.",
+                "What should I do to promote strong and shiny hair?",
+                "What lifestyle changes can support healthy hair growth?"
+                ],
+                "responses": [
+                "Tips for healthy hair care: Wash your hair with a gentle shampoo and conditioner, Avoid excessive heat styling and use heat protectant products when necessary, Eat a balanced diet with nutrients that support hair health, such as vitamins A, C, E, and biotin, Avoid harsh chemical treatments and opt for natural or gentle hair care products, Protect your hair from environmental damage, such as UV rays and pollution"
+                ]
+                },
+                {
+                "tag": "Oral Health and Dental Care",
+                "patterns": [
+                "How can I maintain good oral health?",
+                "Tell me some tips for dental care and oral hygiene.",
+                "What should I do to keep my teeth and gums healthy?",
+                "What lifestyle changes can promote better oral health?"
+                ],
+                "responses": [
+                "Tips for oral health and dental care: Brush your teeth at least twice a day with fluoride toothpaste, Floss daily to remove plaque and food particles between teeth, Visit your dentist regularly for check-ups and professional cleanings, Limit sugary and acidic foods and drinks that can contribute to tooth decay, Avoid tobacco products and excessive alcohol consumption"
+                ]
+                },
+                {
+                "tag": "Workplace Ergonomics",
+                "patterns": [
+                "How can I maintain good ergonomics at work?",
+                "Tell me some tips for setting up an ergonomic workstation.",
+                "What should I do to improve workplace ergonomics?",
+                "What lifestyle changes can promote better posture and reduce work-related strain?"
+                ],
+                "responses": [
+                "Tips for workplace ergonomics: Set up your workstation to promote good posture, including proper chair height and back support, Position your computer monitor at eye level to avoid strain on the neck and eyes, Take regular breaks and stretch to alleviate muscle tension and stiffness, Practice proper lifting and carrying techniques to avoid strain on the back, Seek guidance from an ergonomics specialist if needed"
+                ]
+                },
+                {
+                "tag": "Mindful Eating and Nutrition",
+                "patterns": [
+                "How can I practice mindful eating?",
+                "Tell me some tips for mindful nutrition.",
+                "What should I do to develop a healthy relationship with food?",
+                "What lifestyle changes can support mindful eating habits?"
+                ],
+                "responses": [
+                "Tips for mindful eating and nutrition: Pay attention to your body's hunger and fullness cues, Eat slowly and savor each bite, practicing mindful appreciation of flavors and textures, Focus on whole, nutrient-dense foods rather than restrictive diets, Listen to your body's cravings and make conscious choices, Engage in self-care activities that nurture your overall well-being"
+                ]
+                },
+                {
+                "tag": "Holistic Health Approaches",
+                "patterns": [
+                "How can I adopt a holistic approach to health?",
+                "Tell me some tips for holistic well-being.",
+                "What should I do to integrate mind, body, and spirit in my health journey?",
+                "What lifestyle changes can promote holistic health?"
+                ],
+                "responses": [
+                "Tips for holistic health: Consider all aspects of your well-being, including physical, emotional, mental, and spiritual health, Practice self-reflection and self-awareness to identify areas of imbalance or stress, Incorporate practices such as meditation, yoga, or mindfulness to promote relaxation and inner peace, Seek guidance from holistic healthcare practitioners or therapists, Foster connections with nature and engage in activities that align with your values and purpose"
+                ]
+                },
+                {
+                "tag": "Chronic Fatigue Management",
+                "patterns": [
+                "How can I manage chronic fatigue?",
+                "Tell me some tips for coping with chronic fatigue syndrome.",
+                "What should I do to alleviate symptoms of chronic fatigue?",
+                "What lifestyle changes can support better energy levels?"
+                ],
+                "responses": [
+                "Tips for managing chronic fatigue: Pace yourself and prioritize activities to conserve energy, Practice good sleep hygiene and establish a regular sleep schedule, Maintain a well-balanced diet with nutrient-dense foods, Manage stress levels and practice relaxation techniques, Seek support from healthcare professionals specializing in chronic fatigue syndrome"
+                ]
+                },
+                {
+                "tag": "Stress-Free Work-Life Balance",
+                "patterns": [
+                "How can I achieve a stress-free work-life balance?",
+                "Tell me some tips for balancing work and personal life.",
+                "What should I do to create a healthy work-life balance?",
+                "What lifestyle changes can promote better work-life integration?"
+                ],
+                "responses": [
+                "Tips for achieving a stress-free work-life balance: Set clear boundaries between work and personal life, Prioritize self-care activities and make time for hobbies and interests outside of work, Delegate tasks or seek support when needed, Practice time management and organization skills, Communicate openly with colleagues and supervisors about your needs and limitations"
+                ]
+                },
+                {
+                "tag": "Healthy Relationships and Communication",
+                "patterns": [
+                "How can I build and maintain healthy relationships?",
+                "Tell me some tips for effective communication in relationships.",
+                "What should I do to foster healthy connections with others?",
+                "What lifestyle changes can support positive relationship dynamics?"
+                ],
+                "responses": [
+                "Tips for healthy relationships and communication: Practice active listening and empathy in your interactions with others, Express your thoughts and feelings openly and honestly, Respect boundaries and establish clear communication guidelines, Foster trust and mutual support in relationships, Seek professional help if needed to navigate relationship challenges"
+                ]
+                },
+                {
+                "tag": "Natural Remedies and Herbal Medicine",
+                "patterns": [
+                "How can I incorporate natural remedies into my health routine?",
+                "Tell me some tips for using herbal medicine for wellness.",
+                "What should I do to explore natural alternatives for health issues?",
+                "What lifestyle changes can support natural healing and remedies?"
+                ],
+                "responses": [
+                "Tips for natural remedies and herbal medicine: Research and consult with qualified practitioners before using herbal remedies, Use caution and follow recommended dosages and guidelines, Consider the potential interactions and contraindications with existing medications or health conditions, Maintain a healthy lifestyle with balanced nutrition, regular exercise, and stress management, Stay informed and educate yourself on evidence-based natural remedies"
+                ]
+                },
+                {
+                "tag": "Environmental Wellness",
+                "patterns": [
+                "How can I improve my environmental wellness?",
+                "Tell me some tips for promoting a healthy environment.",
+                "What should I do to reduce my environmental impact?",
+                "What lifestyle changes can support environmental well-being?"
+                ],
+                "responses": [
+                "Tips for environmental wellness: Reduce, reuse, and recycle to minimize waste and promote sustainability, Conserve energy and water by practicing efficient habits at home and in daily activities, Support eco-friendly products and initiatives, Connect with nature and spend time outdoors, Advocate for environmental conservation and participate in community efforts"
+                ]
+                },
+                {
+                "tag": "Healthy Travel Tips",
+                "patterns": [
+                "How can I stay healthy while traveling?",
+                "Tell me some tips for maintaining wellness during travel.",
+                "What should I do to ensure a healthy travel experience?",
+                "What lifestyle changes can promote better travel health?"
+                ],
+                "responses": [
+                "Tips for healthy travel: Plan ahead and research destination-specific health information, Pack necessary medications, first aid supplies, and travel insurance, Stay hydrated by drinking enough water and minimize alcohol consumption, Practice good hygiene, including regular handwashing and using sanitizing products, Listen to your body's needs and prioritize rest and self-care"
+                ]
+                },
+                {
+                "tag": "Senior Care and Aging Parents",
+                "patterns": [
+                "How can I care for aging parents or seniors in my life?",
+                "Tell me some tips for supporting elderly loved ones.",
+                "What should I do to ensure the well-being of seniors?",
+                "What lifestyle changes can support healthy aging in older adults?"
+                ],
+                "responses": [
+                "Tips for senior care and aging parents: Communicate openly and regularly with elderly loved ones to understand their needs and preferences, Seek professional advice and support for medical, financial, or caregiving concerns, Create a safe and comfortable living environment with necessary accommodations, Encourage regular exercise, social engagement, and mental stimulation for seniors, Practice patience, empathy, and compassion in caregiving roles"
+                ]
+                },
+                {
+                "tag": "Mindfulness in Parenting",
+                "patterns": [
+                "How can I practice mindfulness as a parent?",
+                "Tell me some tips for mindful parenting.",
+                "What should I do to be a more present and mindful parent?",
+                "What lifestyle changes can promote mindful and conscious parenting?"
+                ],
+                "responses": [
+                "Tips for mindfulness in parenting: Be fully present and engaged in your interactions with your children, Practice active listening and validate their emotions and experiences, Establish routines and rituals that promote connection and well-being, Take care of your own well-being and practice self-compassion, Seek support from parenting resources or groups for guidance and community"
+                ]
+                },
+                {
+                "tag": "Child Development Milestones",
+                "patterns": [
+                "How can I support my child's development?",
+                "Tell me some tips for understanding child development milestones.",
+                "What should I do to promote healthy growth and learning in children?",
+                "What lifestyle changes can support optimal child development?"
+                ],
+                "responses": [
+                "Tips for child development milestones: Familiarize yourself with age-appropriate developmental milestones, Provide a nurturing and stimulating environment for learning and exploration, Encourage open communication and create a safe space for expression, Foster positive social interactions and emotional intelligence, Seek professional guidance if you have concerns about your child's development"
+                ]
+                },
+                {
+                "tag": "Healthy Snacking Ideas",
+                "patterns": [
+                "How can I make healthier snack choices?",
+                "Tell me some tips for nutritious snacking.",
+                "What should I do to avoid unhealthy snacks?",
+                "What lifestyle changes can promote healthier snacking habits?"
+                ],
+                "responses": [
+                "Tips for healthy snacking: Choose nutrient-dense snacks such as fruits, vegetables, nuts, and seeds, Plan and prepare snacks ahead of time to avoid reaching for unhealthy options, Practice portion control and mindful eating when snacking, Opt for homemade snacks or healthier store-bought options, Listen to your body's hunger and fullness cues rather than emotional or boredom-driven snacking"
+                ]
+                },
+                {
+                "tag": "Improving Posture and Alignment",
+                "patterns": [
+                "How can I improve my posture and alignment?",
+                "Tell me some tips for maintaining good posture.",
+                "What should I do to correct poor alignment?",
+                "What lifestyle changes can promote better posture and alignment?"
+                ],
+                "responses": [
+                "Tips for improving posture and alignment: Be mindful of your posture throughout the day, making adjustments to maintain a neutral spine and alignment, Practice exercises or stretches that target postural muscles, Use ergonomic furniture and supportive equipment, Take breaks and move around regularly if you have a sedentary lifestyle, Seek guidance from healthcare professionals or physical therapists if you have chronic postural issues"
+                ]
+                },
+                {
+                "tag": "Healthy Skin from Within",
+                "patterns": [
+                "How can I achieve healthy skin from within?",
+                "Tell me some tips for promoting skin health through nutrition.",
+                "What should I eat to improve the condition of my skin?",
+                "What lifestyle changes can support healthier skin?"
+                ],
+                "responses": [
+                "Tips for healthy skin from within: Eat a well-balanced diet with a variety of fruits, vegetables, whole grains, and lean proteins, Stay hydrated by drinking enough water, Limit processed foods, sugary drinks, and foods high in refined carbohydrates, Incorporate foods rich in antioxidants and omega-3 fatty acids, Practice sun protection and proper skincare routines"
+                ]
+                },
+                {
+                "tag": "Nutrition for Mental Clarity",
+                "patterns": [
+                "How can nutrition support mental clarity?",
+                "Tell me some tips for improving cognitive function through diet.",
+                "What should I eat to enhance mental focus and clarity?",
+                "What lifestyle changes can support better cognitive function?"
+                ],
+                "responses": [
+                "Tips for nutrition and mental clarity: Eat a well-balanced diet with a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats, Include foods rich in brain-boosting nutrients, such as omega-3 fatty acids, antioxidants, and vitamins B6 and B12, Stay hydrated by drinking enough water, Limit processed foods, sugary drinks, and foods high in trans fats and artificial additives, Get regular exercise and manage stress levels"
+                ]
+                },
+                {
+                "tag": "Boosting Immunity for Cold and Flu Season",
+                "patterns": [
+                "How can I boost my immune system during cold and flu season?",
+                "Tell me some tips for strengthening immunity in winter months.",
+                "What should I do to avoid getting sick during flu season?",
+                "What lifestyle changes can support better immune function in colder months?"
+                ],
+                "responses": [
+                "Tips for boosting immunity during cold and flu season: Maintain a well-balanced diet with plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats, Stay hydrated by drinking enough water, Get enough quality sleep to support immune function, Practice good hand hygiene and proper respiratory etiquette, Stay physically active and engage in regular exercise"
+                ]
+                },
+                {
+                "tag": "Fitness for Busy Professionals",
+                "patterns": [
+                "How can busy professionals stay fit and active?",
+                "Tell me some tips for incorporating exercise into a busy schedule.",
+                "What should I do to maintain a healthy fitness routine despite a busy lifestyle?",
+                "What lifestyle changes can support physical activity for busy professionals?"
+                ],
+                "responses": [
+                "Tips for fitness for busy professionals: Prioritize physical activity by scheduling it into your daily routine, Choose activities that you enjoy and that can be easily integrated into your schedule, Break up prolonged sitting with short bursts of activity throughout the day, Opt for active transportation, such as walking or cycling, whenever possible, Look for time-saving workouts, such as high-intensity interval training (HIIT) or quick home workouts"
+                ]
+                },
+                {
+                "tag": "Energy Healing and Reiki",
+                "patterns": [
+                "How can energy healing and Reiki promote well-being?",
+                "Tell me some tips for exploring energy healing practices.",
+                "What should I do to experience the benefits of energy healing?",
+                "What lifestyle changes can support energy healing and Reiki?"
+                ],
+                "responses": [
+                "Tips for energy healing and Reiki: Seek guidance from certified energy healing practitioners or Reiki masters, Keep an open mind and approach energy healing with a willingness to explore and experience, Create a calm and peaceful environment for energy healing sessions, Practice self-care activities that promote relaxation and mindfulness, Incorporate energy healing as a complementary practice alongside conventional medical treatments"
+                ]
+                },
+                {
+                "tag": "Managing Work-Related Stress",
+                "patterns": [
+                "How can I manage stress in the workplace?",
+                "Tell me some tips for reducing work-related stress.",
+                "What should I do to cope with stress at work?",
+                "What lifestyle changes can support better stress management in the workplace?"
+                ],
+                "responses": [
+                "Tips for managing work-related stress: Practice time management and prioritize tasks, Set realistic goals and expectations, Communicate openly with colleagues and supervisors about your workload and boundaries, Take regular breaks and practice relaxation techniques, Maintain a healthy work-life balance and engage in activities outside of work that bring you joy and relaxation"
+                ]
+                },
+                {
+                "tag": "Healthy Habits for a Strong Immune System",
+                "patterns": [
+                "How can I develop healthy habits to support my immune system?",
+                "Tell me some tips for strengthening the immune system through lifestyle choices.",
+                "What should I do to promote a strong immune system?",
+                "What lifestyle changes can support better immune function?"
+                ],
+                "responses": [
+                "Tips for healthy habits and immune system support: Eat a well-balanced diet with a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats, Engage in regular physical activity to support overall health and immune function, Get enough quality sleep to support immune function and recovery, Manage stress levels and practice relaxation techniques, Maintain good hygiene practices, such as regular handwashing and proper respiratory etiquette"
+                ]
+                },
+                {
+                "tag": "Balancing Hormones Naturally",
+                "patterns": [
+                "How can I balance hormones naturally?",
+                "Tell me some tips for promoting hormonal balance.",
+                "What should I do to support healthy hormone levels?",
+                "What lifestyle changes can help with hormonal balance?"
+                ],
+                "responses": [
+                "Tips for balancing hormones naturally: Eat a balanced diet with a variety of whole foods, including fruits, vegetables, whole grains, lean proteins, and healthy fats, Manage stress levels and practice relaxation techniques, Engage in regular exercise to support hormone regulation, Prioritize sleep and establish a consistent sleep schedule, Avoid exposure to environmental toxins and minimize the use of hormone-disrupting products"
+                ]
+                },
+                {
+                "tag": "Mindfulness in the Workplace",
+                "patterns": [
+                "How can I practice mindfulness at work?",
+                "Tell me some tips for incorporating mindfulness in the workplace.",
+                "What should I do to be more present and mindful at work?",
+                "What lifestyle changes can support a mindful work environment?"
+                ],
+                "responses": [
+                "Tips for mindfulness in the workplace: Take short mindful breaks throughout the day to refocus and recharge, Practice deep breathing or meditation exercises during work breaks, Cultivate a positive and supportive work environment by practicing empathy and active listening, Prioritize tasks and manage time effectively to reduce stress, Establish clear boundaries between work and personal life"
+                ]
+                },
+                {
+                "tag": "Financial Wellness and Money Management",
+                "patterns": [
+                "How can I improve my financial wellness?",
+                "Tell me some tips for better money management.",
+                "What should I do to achieve financial well-being?",
+                "What lifestyle changes can support better financial health?"
+                ],
+                "responses": [
+                "Tips for financial wellness and money management: Create a budget and track your expenses, Prioritize saving and establish an emergency fund, Avoid unnecessary debt and manage existing debt responsibly, Seek financial advice or guidance if needed, Practice mindful spending and make conscious choices aligned with your financial goals"
+                ]
+                },
+                {
+                "tag": "Building Resilience and Mental Strength",
+                "patterns": [
+                "How can I build resilience and mental strength?",
+                "Tell me some tips for developing emotional resilience.",
+                "What should I do to cultivate mental toughness?",
+                "What lifestyle changes can support building resilience and mental strength?"
+                ],
+                "responses": [
+                "Tips for building resilience and mental strength: Cultivate a positive mindset and practice reframing negative thoughts, Develop a support system of friends, family, or professionals, Engage in self-care activities that promote well-being and stress reduction, Set realistic goals and celebrate progress, Learn from challenges and failures, and embrace a growth mindset"
+                ]
+                },
+                {
+                "tag": "Boosting Self-Confidence and Self-Esteem",
+                "patterns": [
+                "How can I boost my self-confidence and self-esteem?",
+                "Tell me some tips for improving self-confidence.",
+                "What should I do to enhance my self-esteem?",
+                "What lifestyle changes can support building self-confidence and self-esteem?"
+                ],
+                "responses": [
+                "Tips for boosting self-confidence and self-esteem: Practice self-care activities that nurture your well-being and self-worth, Surround yourself with positive and supportive people, Set achievable goals and celebrate your achievements, Challenge negative self-talk and practice self-compassion, Engage in activities that showcase your strengths and talents"
+                ]
+                },
+                {
+                "tag": "Coping with Anxiety in Everyday Life",
+                "patterns": [
+                "How can I cope with anxiety in my daily life?",
+                "Tell me some tips for managing everyday anxiety.",
+                "What should I do to alleviate anxiety symptoms?",
+                "What lifestyle changes can support better anxiety management?"
+                ],
+                "responses": [
+                "Tips for coping with anxiety in everyday life: Practice stress management techniques, such as deep breathing, meditation, or mindfulness, Establish a routine and prioritize self-care activities, Engage in regular physical activity to release endorphins and reduce anxiety, Challenge anxious thoughts and practice cognitive-behavioral techniques, Seek support from healthcare professionals or therapists if needed"
+                ]
+                },
+                {
+                "tag": "Healthy Habits for a Happy Gut",
+                "patterns": [
+                "How can I develop healthy habits for a happy gut?",
+                "Tell me some tips for improving gut health.",
+                "What should I do to support a healthy digestive system?",
+                "What lifestyle changes can promote better gut health?"
+                ],
+                "responses": [
+                "Tips for a happy gut and digestive health: Eat a well-balanced diet with plenty of fiber-rich foods, such as fruits, vegetables, and whole grains, Stay hydrated by drinking enough water, Include probiotic-rich foods, such as yogurt, kefir, and fermented vegetables, Manage stress levels and practice relaxation techniques, Avoid excessive consumption of processed foods, sugary drinks, and artificial additives"
+                ]
+                },
+                {
+                "tag": "Mindfulness-Based Stress Reduction (MBSR)",
+                "patterns": [
+                "How can mindfulness-based stress reduction (MBSR) help me?",
+                "Tell me some tips for practicing MBSR.",
+                "What should I do to integrate MBSR into my life?",
+                "What lifestyle changes can support mindfulness-based stress reduction?"
+                ],
+                "responses": [
+                "Tips for mindfulness-based stress reduction (MBSR): Find a qualified MBSR program or instructor to guide you in the practice, Allocate time for daily mindfulness meditation or body scan exercises, Practice mindfulness in everyday activities, such as eating, walking, or engaging in conversation, Cultivate an attitude of non-judgment and acceptance, Prioritize self-care activities that promote relaxation and stress reduction"
+                ]
+                },
+                {
+                "tag": "Building Resilience in Children",
+                "patterns": [
+                "How can I help my child build resilience?",
+                "Tell me some tips for fostering resilience in children.",
+                "What should I do to support my child's emotional strength?",
+                "What lifestyle changes can promote resilience in children?"
+                ],
+                "responses": [
+                "Tips for building resilience in children: Foster a supportive and nurturing environment, Encourage open communication and validate your child's feelings, Teach problem-solving and decision-making skills, Provide opportunities for age-appropriate challenges and growth, Promote self-care activities and teach stress management techniques, Be a positive role model for resilience"
+                ]
+                },
+                {
+                "tag": "Supporting Healthy Aging for Parents",
+                "patterns": [
+                "How can I support healthy aging for my parents?",
+                "Tell me some tips for promoting well-being in aging parents.",
+                "What should I do to ensure the health and happiness of my elderly parents?",
+                "What lifestyle changes can support healthy aging in parents?"
+                ],
+                "responses": [
+                "Tips for supporting healthy aging for parents: Encourage regular exercise or physical activity suitable for their abilities, Assist with meal planning and ensure a well-balanced diet, Provide emotional support and companionship, Assist with healthcare management, including regular check-ups and medication adherence, Promote mental stimulation through activities, hobbies, or social engagement"
+                ]
+                },
+                {
+                "tag": "Preventing Burnout in High-Stress Careers",
+                "patterns": [
+                "How can I prevent burnout in a high-stress career?",
+                "Tell me some tips for avoiding burnout at work.",
+                "What should I do to maintain well-being in a demanding job?",
+                "What lifestyle changes can support preventing burnout in high-stress careers?"
+                ],
+                "responses": [
+                "Tips for preventing burnout in high-stress careers: Establish healthy boundaries between work and personal life, Practice self-care activities that promote relaxation and stress reduction, Delegate tasks or seek support when needed, Prioritize tasks and manage time effectively, Foster a supportive work environment and seek connections with colleagues"
+                ]
+                },
+                {
+                "tag": "Achieving Emotional Balance and Well-Being",
+                "patterns": [
+                "How can I achieve emotional balance and well-being?",
+                "Tell me some tips for emotional well-being.",
+                "What should I do to maintain emotional balance in daily life?",
+                "What lifestyle changes can promote better emotional health?"
+                ],
+                "responses": [
+                "Tips for achieving emotional balance and well-being: Practice self-awareness and identify your emotions, Seek healthy ways to express and process emotions, such as through journaling or talking with a trusted confidant, Engage in activities that bring you joy and fulfillment, Practice stress management techniques, such as deep breathing or meditation, Prioritize self-care activities and establish healthy boundaries"
+                ]
                 }
-              
-              
-]}
-        
+]
+}            
