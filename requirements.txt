@@ -2,3 +2,5 @@ numpy
 nltk 
 keras
 flask
+tensorflow
+
